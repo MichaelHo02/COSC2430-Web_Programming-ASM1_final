@@ -48,16 +48,6 @@
     
 }
 
-.new-store__title-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 160px;
-}
-
-.new-store__card-title {
-}
-
 @media (max-width: 767px) {
     .new-store-wrapper {
         grid-template-columns: 1fr;
@@ -69,7 +59,4 @@
     grid-column-start: 1;
     grid-column-end: 2;
     }
-
-
-
 }

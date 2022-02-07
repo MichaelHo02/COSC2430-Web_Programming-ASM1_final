@@ -2,51 +2,54 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500&display=swap" rel="stylesheet" />
-  
-    <!-- base css -->
-    <link rel="stylesheet" href="./assets/css/grid.css" />
-    <link rel="stylesheet" href="./assets/css/base.css" />
-  
-    <!-- additional link -->
-    <link rel="stylesheet" href="./assets/css/navbar/navbar.css" />
-    <link rel="stylesheet" href="./assets/css/newstore/newstore.css" />
-    <link rel="stylesheet" href="">
-    <link rel="stylesheet" href="./assets//css/footer.css" />
-  
-    <script src="./assets/js/navbar.js" defer></script>
-  </head>
-  <body>
-    <main>
-      <header class="header">
-        <div class="header-wrapper grid wide">
-          <img src="./assets/img/navbar/logo.webp" alt="" class="logo" />
-          <!-- Home (this page), About Us, Fees, My Account, Browse, FAQs, and Contact. -->
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500&display=swap" rel="stylesheet" />
 
-          <nav class="navbar">
-            <ul class="navbar-list">
-              <li><a href="home.html" class="navbar-item">Home</a></li>
-              <li><a href="aboutus.html" class="navbar-item">About Us</a></li>
-              <li><a href="fees.html" class="navbar-item">Fees</a></li>
-              <li>
-                <a href="myaccount.html" class="navbar-item">My Account</a>
-              </li>
-              <li><a href="browse.html" class="navbar-item">Browse</a></li>
-              <li><a href="faqs.html" class="navbar-item">FAQs</a></li>
-            </ul>
-          </nav>
-          <button class="navbar-btn btn">Contact</button>
-        </div>
-      </header>
-      <section class="new-store grid wide"> 
-        <div class="new-store__title-wrapper">
-          <h1 class="new-store-title">New Store</h1>
+  <!-- base css -->
+  <link rel="stylesheet" href="./assets/css/grid.css" />
+  <link rel="stylesheet" href="./assets/css/base.css" />
+
+  <!-- additional link -->
+  <link rel="stylesheet" href="./assets/css/navbar/navbar.css" />
+  <link rel="stylesheet" href="./assets/css/container/newstore.css" />
+  <link rel="stylesheet" href="./assets/css/container/container.css">
+  <link rel="stylesheet" href="./assets/css/footer.css" />
+
+  <script src="./assets/js/navbar.js" defer></script>
+</head>
+
+<body>
+  <div class="main">
+    <header class="header">
+      <div class="header-wrapper grid wide">
+        <img src="./assets/img/navbar/logo.webp" alt="" class="logo" />
+        <!-- Home (this page), About Us, Fees, My Account, Browse, FAQs, and Contact. -->
+
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li><a href="home.html" class="navbar-item">Home</a></li>
+            <li><a href="aboutus.html" class="navbar-item">About Us</a></li>
+            <li><a href="fees.html" class="navbar-item">Fees</a></li>
+            <li>
+              <a href="myaccount.html" class="navbar-item">My Account</a>
+            </li>
+            <li><a href="browse.html" class="navbar-item">Browse</a></li>
+            <li><a href="faqs.html" class="navbar-item">FAQs</a></li>
+          </ul>
+        </nav>
+        <button class="navbar-btn btn">Contact</button>
+      </div>
+    </header>
+
+    <main>
+      <div class="new-store grid wide">
+        <div class="container__title-wrapper">
+          <h1 class="container__title">New Store</h1>
         </div>
         <div class="new-store-wrapper">
           <div class="new-store__card">
@@ -79,10 +82,9 @@
             <img src="./assets/img/newstore/store_4.webp" alt="" class="new-store__img" />
           </div>
         </div>
-      </section>
-      
+      </div>
 
-      <section class="container grid wide">
+      <div class="container grid wide">
         <div class="container__title-wrapper">
           <h1 class="container__title">New Product</h1>
         </div>
@@ -90,8 +92,8 @@
           <div class="container__page" style="background-color: red;">
           </div>
         </div>
-      </section>
-    </main> 
+      </div>
+    </main>
 
     <footer class="grid wide">
       <div class="footer__container display-grid template-2-row">
