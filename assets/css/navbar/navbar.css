@@ -40,8 +40,37 @@
     padding: 0 32px;
 }
 
-.navbar-item:last-child {
-    margin-right: -32px;
+@media (max-width: 767px) {
+    .header-wrapper {
+        flex-direction: column;
+    }
+
+    .logo {
+        margin: 0;
+        margin-bottom: 36.5px;
+        transform: translateY(50%);
+
+    }
+
+    .navbar {
+        position: absolute;
+        width: 100%;
+        top: 73px;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar-list {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar-btn {
+        display: none;
+    }
 }
 
 

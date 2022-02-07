@@ -16,3 +16,19 @@ html {
 .main {
     width: 100%;
 }
+
+.btn {
+    border: 0 solid transparent;
+    background-color: #ff3368;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 8px;
+    padding: 20px;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+
+}
+
+.btn:hover {
+    opacity: 0.8;
+}

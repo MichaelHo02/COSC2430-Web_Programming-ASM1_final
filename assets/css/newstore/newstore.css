@@ -15,6 +15,7 @@
     background-color: #f8fbff;
     position: relative;
     border-radius: 8px;
+    overflow: hidden;
 }
 
 .new-store__card-content {
@@ -44,6 +45,7 @@
     z-index: 1;
     bottom: 0;
     right: 32px;
+    
 }
 
 .new-store__title-wrapper {
@@ -64,12 +66,10 @@
     }
 
     .new-store__card {
-    grid-column-start: 1 !important;
-    grid-column-end: 2 !important;
+    grid-column-start: 1;
+    grid-column-end: 2;
     }
 
-    .new-store__img {
-        display: none;    
-    }
+
 
 }
