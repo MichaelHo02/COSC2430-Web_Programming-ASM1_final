@@ -1,6 +1,26 @@
 .container__title-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 160px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 160px;
+}
+
+.container {
+
+}
+
+.container__title-wrapper {
+
+}
+.container__title {
+
+}
+.container__wrapper {
+
+}
+.container__page {
+
+}
+.container.grid.wide {
+
 }
