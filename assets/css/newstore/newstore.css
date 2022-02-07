@@ -55,3 +55,21 @@
 
 .new-store__card-title {
 }
+
+@media (max-width: 767px) {
+    .new-store-wrapper {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 400px);
+
+    }
+
+    .new-store__card {
+    grid-column-start: 1 !important;
+    grid-column-end: 2 !important;
+    }
+
+    .new-store__img {
+        display: none;    
+    }
+
+}
