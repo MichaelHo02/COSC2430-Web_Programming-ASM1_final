@@ -1,0 +1,11 @@
+.container__title-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 160px;
+}
+
+.container__title {
+    margin: 8px 48px;
+    font-weight: 600;
+}
