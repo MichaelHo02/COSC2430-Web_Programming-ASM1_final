@@ -59,7 +59,7 @@
 
 .footer__center {
     grid-column: 2/3;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .footer__right {
