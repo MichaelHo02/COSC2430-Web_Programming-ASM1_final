@@ -40,7 +40,14 @@
     padding: 0 32px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1024px) {
+    .header-wrapper {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}
+
+@media (max-width: 768px) {
     .header-wrapper {
         flex-direction: column;
     }
