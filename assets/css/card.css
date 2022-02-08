@@ -1,0 +1,40 @@
+.card.item {
+	max-width: 240px;
+	border-radius: 5px;
+	transition: all 0.5s;
+	margin: auto;
+	/* background-color: red; */
+	padding-bottom: 20px;
+}
+
+.card:hover.item {
+	box-shadow: 0 10px 20px 0 rgb(0 23 51 / 9%);
+}
+
+.card:hover .card__body.item {
+	transition: inherit;
+	padding: 0 20px;
+}
+
+.card:hover .store__container.item {
+	transition: inherit;
+	padding: 0 20px;
+}
+
+.card:not(:hover) .card__body.item {
+	transition: inherit;
+	padding: 0 10px;
+}
+
+.card:not(:hover) .store__container.item {
+	transition: inherit;
+	padding: 0 10px;
+}
+
+.card__img-container.item {
+	width: 100%;
+}
+
+.card__img {
+	width: 100%;
+}
