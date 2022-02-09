@@ -18,6 +18,7 @@
 }
 
 .navbar {
+    box-shadow: 0px 16px 16px #999;
 }
 
 .navbar-list {
@@ -75,9 +76,7 @@
 }
 
 
-input[type=checkbox]:checked ~ .navbar{
-    display: none;
-  }
+
 
 @media (min-width: 1025px) {
     .navbar {
@@ -107,6 +106,9 @@ input[type=checkbox]:checked ~ .navbar{
         background-color: #fff;
         display: flex;
         flex-direction: column;
+        display: none;
+        opacity: 0;
+        transition: all 0.5s ease 0.3s;
     }
 
     .navbar-list {
@@ -119,13 +121,24 @@ input[type=checkbox]:checked ~ .navbar{
     .navbar-btn {
         display: none;
     }
+    
+    .menu-checkbox:hover .menu-btn-mobile {
+        opacity: 0.6;
+        cursor: pointer;
+    }
 
     .menu-checkbox {
         display: block;
     }
 
-    #toggle:checked + .navbar {
-        display: block !important;
+    /* input[id=toggle]:checked ~ .navbar{
+        display: block;
+        
+      } */
+
+    #toggle:checked ~ .navbar {
+        display: flex;
+        opacity: 1;
     }
 
 
