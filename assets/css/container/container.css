@@ -28,7 +28,7 @@
 
 .container__page {
 	scroll-snap-align: start;
-	width: 100%;
+	min-width: 100%;
 	display: inline-grid;
 	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 	/* justify-content: center; */
