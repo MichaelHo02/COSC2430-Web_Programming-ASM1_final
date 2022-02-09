@@ -9,16 +9,15 @@
 }
 
 .header-wrapper {
-    width: 100%;
     height: 73px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
+
 }
 
 .navbar {
-
 }
 
 .navbar-list {
@@ -31,24 +30,63 @@
     height: 23px;
     margin-left: 0;
     margin-right: auto;
+    position: relative;
 }
 
 .navbar-item {
     text-decoration: none;
     color: black;
     line-height: 73px;
-    padding: 0 32px;
+    padding: 0 20px;
+    position: relative;
+
+}
+
+.navbar-btn {
+    margin-right: 0;
+    position: relative;
+
+}
+
+.menu-btn-mobile {
+    position: absolute;
+    z-index: 101;
+    top: 0;
+    bottom: 50%;
+    line-height: 73px;
+    font-size: 32px;
+    left: 24px;
+    right: auto;
+
+}
+
+.menu-checkbox {
+    width: 73px;
+    height: 73px;
+    position: absolute;
+    left: 0;
+    display: none;
+}
+
+#toggle {
+    position: absolute;
+    left: 0;
+    visibility: hidden;
+}
+
+
+
+
+@media (min-width: 1025px) {
+    .navbar {
+        display: block !important;
+    }
 }
 
 @media (max-width: 1024px) {
     .header-wrapper {
         padding-left: 12px;
         padding-right: 12px;
-    }
-}
-
-@media (max-width: 768px) {
-    .header-wrapper {
         flex-direction: column;
     }
 
@@ -60,12 +98,17 @@
     }
 
     .navbar {
+    box-shadow: 0px 16px 16px #999;
+        
         position: absolute;
         width: 100%;
         top: 73px;
         background-color: #fff;
         display: flex;
         flex-direction: column;
+        display: none;
+        opacity: 0;
+        transition: all 0.5s ease 0.3s;
     }
 
     .navbar-list {
@@ -78,6 +121,31 @@
     .navbar-btn {
         display: none;
     }
+    
+    .menu-checkbox:hover .menu-btn-mobile {
+        opacity: 0.6;
+        cursor: pointer;
+    }
+
+    .menu-checkbox {
+        display: block;
+    }
+
+    /* input[id=toggle]:checked ~ .navbar{
+        display: block;
+        
+      } */
+
+    #toggle:checked ~ .navbar {
+        display: flex;
+        opacity: 1;
+    }
+
+
+}
+
+@media (max-width: 768px) {
+
 }
 
 

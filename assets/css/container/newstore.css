@@ -18,6 +18,10 @@
     overflow: hidden;
 }
 
+.new-store__card:hover {
+    cursor: pointer;
+}
+
 .new-store__card-content {
     position: absolute;
     z-index: 2;
