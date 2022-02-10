@@ -74,16 +74,20 @@
     visibility: hidden;
 }
 
+.navbar-contact-mobile {
+    display: none;
+}
 
 
 
-@media (min-width: 1025px) {
+
+@media (min-width: 1020px) {
     .navbar {
         display: block !important;
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1020px) {
     .header-wrapper {
         padding-left: 12px;
         padding-right: 12px;
@@ -131,20 +135,35 @@
         display: block;
     }
 
-    /* input[id=toggle]:checked ~ .navbar{
-        display: block;
-        
-      } */
-
     #toggle:checked ~ .navbar {
         display: flex;
         opacity: 1;
     }
 
+    .navbar-contact-mobile {
+        display: block;
+        position: absolute;
+        z-index: 200;
+        right: 0;
+        
+        bottom: 36.6px;
+        transform: translateY(50%);
+        padding: 14px;
+        background-color: #fff;
+        margin-right: 8px;
+        border-radius: 50%;
+    }
+
+    .navbar-contact-mobile i {
+        color: black;
+        font-size: 26px;
+        
+    }
+
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 700px) {
 
 }
 
