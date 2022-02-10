@@ -40,11 +40,16 @@
 }
 
 .card a {
-    text-decoration: none;
-    color: inherit;
-    transition: 0.5s;
+	text-decoration: none;
+	color: inherit;
+	transition: 0.5s;
 }
 
 .card a:hover {
-    color: #ff3368;
+	color: #ff3368;
+}
+
+.card__img-container.item:hover {
+	transition: 0.5s ease-in-out;
+	opacity: 0.8;
 }
