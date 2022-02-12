@@ -1,118 +1,118 @@
 /* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-box {
-  background-color: transparent;
-  width: 50%;
-  height: 70vh;
-  border: 1px solid #f1f1f1;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    background-color: transparent;
+    width: 50%;
+    height: 70vh;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
 
 /* This container is needed to position the front and back side */
 .flip-box-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
 }
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
 .flip-box:hover .flip-box-inner {
-  transform: rotateY(180deg);
+    transform: rotateY(180deg);
 }
 
 /* Position the front and back side */
-.flip-box-front, .flip-box-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden; /* Safari */
-  backface-visibility: hidden;
+.flip-box-front,
+.flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
 }
 
 /* Style the front side */
 .flip-box-front {
-  background-color: #ffdfd3;
-  color: black;
+    background-color: #ffdfd3;
+    color: black;
 }
 
 /* H2 tag front side */
-.flip-box-front-header{
+.flip-box-front-header {
     padding-top: 200px;
     font-size: 50px;
-
 }
 
 /* Style the back side */
 .flip-box-back {
-  background-color: #d6ecd2;
-  color: black;
-  transform: rotateY(180deg);
+    background-color: #d6ecd2;
+    color: black;
+    transform: rotateY(180deg);
 }
 
 /* Style for the details fees */
-.table-container{
+.table-container {
     box-sizing: border-box;
 }
 /* Create three columns of equal width */
 .columns {
-  float: left;
-  width: 50%;
-  padding: 8px 8px;
+    float: left;
+    width: 50%;
+    padding: 8px 8px;
 }
 
 /* Style the list */
 .price {
-  list-style-type: none;
-  border: 1px solid #eee;
-  margin: 0;
-  padding: 0;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+    list-style-type: none;
+    border: 1px solid #eee;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
 }
 
 /* Add shadows on hover */
 .price:hover {
-  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+    box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
 }
 
 /* Pricing header */
 .price .header {
-  background-color: #111;
-  color: white;
-  font-size: 25px;
+    background-color: #111;
+    color: white;
+    font-size: 25px;
 }
 
 /* List items */
 .price li {
-  border-bottom: 1px solid #eee;
-  padding: 20px;
-  text-align: center;
+    border-bottom: 1px solid #eee;
+    padding: 20px;
+    text-align: center;
 }
 
 /* Grey list item */
 .price .grey {
-  background-color: white;
-  font-size: 25px;
-  color: black;
+    background-color: white;
+    font-size: 25px;
+    color: black;
 }
 
 /* The "Sign Up" button */
 .button {
-  background-color: #04AA6D;
-  border: none;
-  color: white;
-  padding: 10px 25px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 18px;
+    background-color: #04aa6d;
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
 }
 
 /* Change the width of the three columns to 100%
 (to stack horizontally on small screens) */
 @media only screen and (max-width: 600px) {
-  .columns {
-    width: 100%;
-  }
+    .columns {
+        width: 100%;
+    }
 }
