@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- base css -->
+  <link rel="stylesheet" href="./assets/css/grid.css" />
+  <link rel="stylesheet" href="./assets/css/base.css" />
+  <link rel="stylesheet" href="./assets/css/fees/fees.css" />
+  <!-- additional link -->
+  <link rel="stylesheet" href="./assets/css/navbar/navbar.css" />
+  <link rel="stylesheet" href="./assets/css/container/newstore.css" />
+  <link rel="stylesheet" href="./assets/css/container/container.css">
+  <link rel="stylesheet" href="./assets/css/card.css">
+  <link rel="stylesheet" href="./assets/css/footer.css" />
+  <link rel="stylesheet" href="./assets/css/myaccount/myaccount-login.css">
+
+  <script src="./assets/js/navbar.js" defer></script>
+</head>
+
+<header class="header">
+    <div class="header-wrapper grid wide">
+
+      <img src="./assets/img/navbar/logo.webp" alt="" class="logo" />
+      <!-- Home (this page), About Us, Fees, My Account, Browse, FAQs, and Contact. -->
+
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li><a href="index.html" class="navbar-item">Home</a></li>
+          <li><a href="aboutus.html" class="navbar-item">About Us</a></li>
+          <li><a href="fees.html" class="navbar-item">Fees</a></li>
+          <li>
+            <a href="myaccount.html" class="navbar-item">My Account</a>
+          </li>
+          <li><a href="browse.html" class="navbar-item">Browse</a></li>
+          <li><a href="faqs.html" class="navbar-item">FAQs</a></li>
+        </ul>
+      </nav>
+      <button class="navbar-btn btn">Contact</button>
+    </div>
+  </header>
+
+<!--3D Flip box-->
+<!--Store owner box-->
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+      <h2 class="flip-box-front-header">You are store owners</h2>
+    </div>
+    <div class="flip-box-back">
+        <div class="table-container">
+          <div class="columns">
+            <ul class="price">
+                <li class="header">Basic</li>
+                <li class="grey">$ 100 / month</li>
+                <li>10GB for uploading images </li>
+                <li>Medium suggestion for shoppers</li>
+                <li>Technical supports</li>
+            </ul>
+         </div>
+          <div class="columns">
+            <ul class="price">
+                <li class="header">Premium</li>
+                <li class="grey">$ 1099 / year</li>
+                <li>Free space for uploading images</li>
+                <li>High suggestion for shoppers</li>
+                <li>Discount 10% for advertisement</li>
+                <li>Full supports</li>
+            </ul>
+         </div>
+       </div>
+    </div>
+  </div>
+</div>
+<!--Shopper box-->
+<div class="flip-box">
+  <div class="flip-box-inner">
+    <div class="flip-box-front">
+        <h2 class="flip-box-front-header">You are shoppers</h2>
+    </div>
+    <div class="flip-box-back">
+        <div class="table-container">
+          <div class="columns">
+            <ul class="price">
+                <li class="header">Basic</li>
+                <li class="grey">$ 1.29 / month</li>
+                <li>Medium priority for delivery </li>
+                <li>Low notification from favorite stores</li>
+                <li>Low level of discount program</li>
+            </ul>
+         </div>
+          <div class="columns">
+            <ul class="price">
+                <li class="header">Premium</li>
+                <li class="grey">$ 19.9 / year</li>
+                <li>High priority for delivery</li>
+                <li>Cancel the orders without penalty </li>
+                <li>Monthly lucky gifts</li>
+                <li>Accumulate points after shoppings</li>
+            </ul>
+         </div>
+       </div>
+    </div>
+  </div>
+</div>
+
+
+
+<footer class="grid wide">
+    <div class="footer__container">
+      <div class="footer__center">
+        <img src="./assets/img/navbar/logo.webp" alt="" class="" />
+      </div>
+      <div class="footer__row">
+        <div class="footer__left">
+          <h4 class="footer__header">Policy</h4>
+          <ul>
+            <li>
+              <a href="term-of-service.html">Term of Service</a>
+            </li>
+            <li>
+              <a href="privacy.html">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="copyright.html">Copyright</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__right">
+          <h4 class="footer__header">Policy</h4>
+          <ul>
+            <li>
+              <a href="term-of-service.html">Term of Service</a>
+            </li>
+            <li>
+              <a href="privacy.html">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="copyright.html">Copyright</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="padding-20">
+        <p class="text-center font-size-3">Copyright @ 2022</p>
+      </div>
+    </div>
+  </footer>
