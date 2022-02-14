@@ -29,7 +29,6 @@ textarea {
 .input-focus {
 	padding: 1rem;
 	width: 100%;
-	max-width: 600px;
 	display: block;
 	border: 1px solid #b5bfc9;
 	border-radius: 6px;
@@ -96,10 +95,6 @@ textarea {
 	background-color: var(--primary-color);
 }
 
-select {
-	width: 20% !important;
-}
-
 select:invalid {
 	color: #8d97a9;
 }
@@ -117,11 +112,25 @@ input[type="email"]:not(:placeholder-shown):invalid {
 	text-align: center;
 }
 
-
 .display-grid {
 	display: grid;
+}
+
+.justify-content-center {
 	justify-content: center;
+}
+
+.grid-template-2-columns {
 	grid-template-columns: repeat(2, 1fr);
+}
+
+.display-grid div {
+	width: 150px;
+}
+
+.custom {
+	grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+	row-gap: 20px;
 }
 
 .button {
@@ -130,5 +139,8 @@ input[type="email"]:not(:placeholder-shown):invalid {
 	margin: 0 auto;
 }
 
-
-
+@media screen and (max-width: 698px) {
+	.grid.wide {
+		width: 90%;
+	}
+}
