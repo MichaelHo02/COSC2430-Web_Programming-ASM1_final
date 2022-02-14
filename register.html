@@ -410,24 +410,50 @@
                     <option value="ZW">Zimbabwe</option>
                 </select>
             </div>
-
+            
             <div class="form__section">
-                <label for="" class="form__section">Account type</label>
-                <input type="radio" id="shopper" class="radio-input" name="shopper" />
+                <label class="form__section">Account type</label>
+                <input type="radio" id="shopper" class="radio-input" name="group-radio" />
                 <label for="shopper" class="radio-label"></label>
                 <label for="shopper" class="label-input">Shopper</label>
-                <input type="radio" id="storeowner" class="radio-input" name="storeowner" />
+                <input type="radio" id="storeowner" class="radio-input" name="group-radio"/>
                 <label for="storeowner" class="radio-label"></label>
                 <label for="storeowner" class="label-input">Store Owner</label>
+                <label for="storeowner" id="business-form-wrapper">
+                  <div class="form__section" id="business-form">
+                    <label for="business-name" class="form__section">Business name</label>
+                    <input class="form__input input-focus" autocomplete="off" type="text" id="business-name"
+                        placeholder="Enter your business name" maxlength="50" required />
+                    <label for="store-name" class="form__section">Store name</label>
+                    <input class="form__input input-focus" autocomplete="off" type="text" id="store-name"
+                        placeholder="Enter your store name" maxlength="50" required />
+                        <label for="storecategory" class="form__section">Store category</label>
+                        <select name="storetype" class="form__input input-focus" id="storecategory" required>
+                            <option value="AF">Department Store</option>
+                            <option value="AX">Grocery Store</option>
+                            <option value="AL">Restaurant</option>
+                            <option value="DZ">Clothing Store</option>
+                            <option value="AS">Accessory Store</option>
+                            <option value="AD">Pharmacy Store</option>
+                            <option value="AO">Technologies Store</option>
+                            <option value="AI">Toy Store</option>
+                            <option value="AQ">Specialty Store</option>
+                            <option value="AG">Thrift Store</option>
+                            <option value="AG">Pet Store</option>
+                            <option value="AG">Kiosk</option>     
+                        </select>
+                  </div>
+
+                </label>
             </div>
 
-
-
-
-
-
-
           </section>
+          <section class="section">
+            <div class="display-grid justify-content-center grid-template-2-columns">
+                <button type="reset" name="" value="" class="button">Reset the Form</button>
+                <button type="submit" name="send" id="send" class="button">Submit</button>
+            </div>
+        </section>
         </form>
       </main>
 

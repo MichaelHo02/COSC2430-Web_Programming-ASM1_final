@@ -107,6 +107,14 @@ input[type="email"]:not(:placeholder-shown):invalid {
 	color: red;
 }
 
+#business-form-wrapper {
+	display: none;
+}
+
+#storeowner:checked ~ #business-form-wrapper {
+	display: block;
+}
+
 .label-input {
 	display: inline-block;
 	text-align: center;
