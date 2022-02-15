@@ -1,5 +1,5 @@
 .section {
-	margin: 20px 0;
+	padding: 20px;
 }
 
 label.form__section {
@@ -81,7 +81,7 @@ textarea {
 .checkbox-label {
 	width: 20px;
 	height: 20px;
-	border-radius: 0.2px;
+	border-radius: 2px;
 	background-color: #eee;
 	display: inline-block;
 	cursor: pointer;
