@@ -1,25 +1,24 @@
 .aboutus-container {
-    padding: 16px 0;
+  padding: 16px 0;
 }
 
 .aboutus__card {
-    
-    background-color: #f8fbff; 
-    display: grid;
-    gap: 32px;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr;
-    padding: 48px;
-    border-radius: 8px;
-    margin-top: 32px;
+  background-color: #f8fbff;
+  display: grid;
+  gap: 32px;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr;
+  padding: 48px;
+  border-radius: 8px;
+  margin-top: 32px;
 }
 
 .aboutus__card-img {
-    background-size: cover;
-    overflow: hidden;
-    border-radius:50% 50% 50% 50%;
-    width:300px;
-    height:300px;
+  background-size: cover;
+  overflow: hidden;
+  border-radius: 50% 50% 50% 50%;
+  width: 300px;
+  height: 300px;
 }
 
 /* .aboutus__card-img:nth-child(2) {
@@ -27,43 +26,37 @@
 } */
 
 #aboutus__anh-truong {
-    background-image: url('../../img/member/Anh.jpeg');
+  background-image: url("../../img/member/Anh.jpeg");
 }
 
 .aboutus__card-info {
-    /* grid-column: span 2; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  /* grid-column: span 2; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .aboutus__card-name {
-    padding-bottom: 16px;
+  padding-bottom: 16px;
 }
 
 .aboutus__card-desc {
-    padding: 4px 0;
+  padding: 4px 0;
 }
 
-@media (max-width: 1020px) {
-    .aboutus__card {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        justify-items: center;
-    }
+@media (max-width: 1023px) {
+  .aboutus__card {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+  }
 
-    .aboutus__card-name {
-        margin-top: -64px;
-    }
+  .aboutus__card-name {
+    margin-top: -64px;
+  }
 
-    .aboutus__card-info {
-        text-align: center;
-    }
-}
-
-@media (max-width: 700px) {
-    .aboutus__card {
-        margin: 16px 16px;
-    }
+  .aboutus__card-info {
+    text-align: center;
+  }
 }
