@@ -7,6 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- base css -->
     <link rel="stylesheet" href="./assets/css/grid.css" />
     <link rel="stylesheet" href="./assets/css/base.css" />
@@ -45,7 +52,9 @@
                         <li><a href="faqs.html" class="navbar-item">FAQs</a></li>
                     </ul>
                 </nav>
-                <button class="navbar-btn btn">Contact</button>
+                <a href="contact.html">
+                    <button class="navbar-btn btn">Contact</button>
+                </a>
                 <a href="" class="navbar-contact-mobile">
                     <i class="fa-solid fa-phone-flip"></i>
                 </a>
@@ -141,8 +150,9 @@
                     </div>
 
                 </section>
+
                 <section class="section">
-                    <h4 class="form__section">Message:</h4>
+                    <label for="message" class="form__section">Message:</label>
                     <textarea class="input-focus text-area" name="message" id="message" rows="5"
                         placeholder="Please enter your message"></textarea>
                 </section>
