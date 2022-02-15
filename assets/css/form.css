@@ -133,11 +133,11 @@ input[type="email"]:not(:placeholder-shown):invalid {
 }
 
 .display-grid div {
-	width: 150px;
+	width: 152px;
 }
 
 .custom {
-	grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
 	row-gap: 20px;
 }
 
