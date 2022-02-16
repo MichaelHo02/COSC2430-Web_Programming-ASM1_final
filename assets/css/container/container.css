@@ -5,15 +5,16 @@
 	height: 160px;
 }
 
-.container {
+.heigh-auto {
+	height: auto;
+}
 
+.container {
 }
 
 .container__title-wrapper {
-
 }
 .container__title {
-
 }
 .container__wrapper {
 	display: flex;
