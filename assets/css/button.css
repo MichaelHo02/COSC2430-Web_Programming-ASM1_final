@@ -48,3 +48,7 @@
 .column-gap {
 	column-gap: 5px;
 }
+
+.padding-top-bottom {
+	padding: 20px 0;
+}
