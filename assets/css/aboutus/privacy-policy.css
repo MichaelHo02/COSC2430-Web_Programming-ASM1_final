@@ -107,3 +107,8 @@ a[rel~="nofollow"]:hover {
   a.active {
   background: #334055;
 }
+@media (max-width: 1023px) {
+  .page {
+    text-align: center;
+  }
+}
