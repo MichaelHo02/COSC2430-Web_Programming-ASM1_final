@@ -17,87 +17,188 @@
   <link rel="stylesheet" href="./assets/css/grid.css" />
   <link rel="stylesheet" href="./assets/css/base.css" />
 
-  <!-- additional link -->
+  <!-- navbar and footer -->
   <link rel="stylesheet" href="./assets/css/navbar/navbar.css" />
+  <link rel="stylesheet" href="./assets/css/footer.css" />
+
+  <!-- additional link -->
   <link rel="stylesheet" href="./assets/css/container/newstore.css" />
   <link rel="stylesheet" href="./assets/css/container/container.css">
   <link rel="stylesheet" href="./assets/css/card.css">
-  <link rel="stylesheet" href="./assets/css/footer.css" />
+  <link rel="stylesheet" href="./assets/css/button.css">
 
 </head>
 
 <body>
   <div class="main">
     <header class="header">
-      <div class="header-wrapper grid wide">
+      <div class="header__wrapper grid wide">
 
-        <label class="menu-checkbox" for="toggle">
-          <i class="fa-solid fa-bars menu-btn-mobile"></i>
+        <label class="nav__menu" for="toggle">
+          <i class="fa-solid fa-bars nav__menu-button"></i>
         </label>
         <input type="checkbox" id="toggle">
 
+        <img src="./assets/img/navbar/logo.webp" alt="Aranoz" class="logo" />
 
-        <img src="./assets/img/navbar/logo.webp" alt="" class="logo" />
         <!-- Home (this page), About Us, Fees, My Account, Browse, FAQs, and Contact. -->
-
+        <!-- main navigation button -->
         <nav class="navbar">
-          <ul class="navbar-list">
-            <li><a href="index.html" class="navbar-item">Home</a></li>
-            <li><a href="aboutus.html" class="navbar-item">About Us</a></li>
-            <li><a href="fees.html" class="navbar-item">Fees</a></li>
-            <li>
-              <a href="myaccount.html" class="navbar-item">My Account</a>
-            </li>
-            <li><a href="browse.html" class="navbar-item">Browse</a></li>
-            <li><a href="faqs.html" class="navbar-item">FAQs</a></li>
+
+          <ul class="navbar__list">
+            <li><a href="index.html" class="navbar__item">Home</a></li>
+            <li><a href="aboutus.html" class="navbar__item">About Us</a></li>
+            <li><a href="fees.html" class="navbar__item">Fees</a></li>
+            <li><a href="myaccount.html" class="navbar__item">My Account</a></li>
+            <li><a href="browse.html" class="navbar__item">Browse</a></li>
+            <li><a href="faqs.html" class="navbar__item">FAQs</a></li>
           </ul>
+
         </nav>
+        <!-- contact button for desktop -->
         <a href="contact.html">
-          <button class="navbar-btn btn">Contact</button>
+          <button class="navbar__btn button">Contact</button>
         </a>
-        <a href="" class="navbar-contact-mobile">
+        <!-- contact buttton for mobile -->
+        <a href="contact.html" class="navbar__button--mobile">
           <i class="fa-solid fa-phone-flip"></i>
         </a>
+
       </div>
     </header>
 
     <main>
-      <div class="new-store grid wide">
+      <div class="container grid wide">
         <div class="container__title-wrapper">
-          <h1 class="container__title">New Store</h1>
+          <h1 class="container__title">New Stores</h1>
         </div>
-        <div class="new-store-wrapper">
-          <div class="new-store__card">
-            <div class="new-store__card-content">
-              <p class="new-store__card-desc">Deluxe</p>
-              <h2 class="new-store__card-title">Yosemite</h2>
+        <div class="container__wrapper">
+          <div class="container__page">
+            <div class="card store">
+              <div class="card__img-container store">
+                <a href="#">
+                  <img src="./assets/img/logo/Untitled design.png" alt="chair image" class="card__img">
+                </a>
+              </div>
+              <div class="store__container store">
+                <div class="store__name">
+                  <a href="#">
+                    Swiss Production
+                  </a>
+                </div>
+              </div>
             </div>
 
-            <img src="./assets/img/newstore/store_1.webp" alt="" class="new-store__img" />
-          </div>
-          <div class="new-store__card">
-            <div class="new-store__card-content">
-              <p class="new-store__card-desc">Deluxe</p>
-              <h2 class="new-store__card-title">Yosemite</h2>
+            <div class="card store">
+              <div class="card__img-container store">
+                <a href="#">
+                  <img src="./assets/img/logo/Untitled design.png" alt="chair image" class="card__img">
+                </a>
+              </div>
+              <div class="store__container store">
+                <div class="store__name">
+                  <a href="#">
+                    Swiss Production
+                  </a>
+                </div>
+              </div>
             </div>
-            <img src="./assets/img/newstore/store_2.webp" alt="" class="new-store__img" />
-          </div>
-          <div class="new-store__card">
-            <div class="new-store__card-content">
-              <p class="new-store__card-desc">Deluxe</p>
-              <h2 class="new-store__card-title">Yosemite</h2>
+
+            <div class="card store">
+              <div class="card__img-container store">
+                <a href="#">
+                  <img src="./assets/img/logo/Untitled design.png" alt="chair image" class="card__img">
+                </a>
+              </div>
+              <div class="store__container store">
+                <div class="store__name">
+                  <a href="#">
+                    Swiss Production
+                  </a>
+                </div>
+              </div>
             </div>
-            <img src="./assets/img/newstore/store_3.webp" alt="" class="new-store__img" />
-          </div>
-          <div class="new-store__card">
-            <div class="new-store__card-content">
-              <p class="new-store__card-desc">Deluxe</p>
-              <h2 class="new-store__card-title">Yosemite</h2>
+
+            <div class="card store">
+              <div class="card__img-container store">
+                <a href="#">
+                  <img src="./assets/img/logo/Untitled design.png" alt="chair image" class="card__img">
+                </a>
+              </div>
+              <div class="store__container store">
+                <div class="store__name">
+                  <a href="#">
+                    Swiss Production
+                  </a>
+                </div>
+              </div>
             </div>
-            <img src="./assets/img/newstore/store_4.webp" alt="" class="new-store__img" />
+          </div>
+
+          <div class="container__page">
+            <div class="card store">
+              <div class="card__img-container store">
+                <a href="#">
+                  <img src="./assets/img/logo/Untitled design.png" alt="chair image" class="card__img">
+                </a>
+              </div>
+              <div class="store__container store">
+                <div class="store__name">
+                  <a href="#">
+                    Swiss Production
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card store">
+              <div class="card__img-container store">
+                <a href="#">
+                  <img src="./assets/img/logo/Untitled design.png" alt="chair image" class="card__img">
+                </a>
+              </div>
+              <div class="store__container store">
+                <div class="store__name">
+                  <a href="#">
+                    Swiss Production
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card store">
+              <div class="card__img-container store">
+                <a href="#">
+                  <img src="./assets/img/logo/Untitled design.png" alt="chair image" class="card__img">
+                </a>
+              </div>
+              <div class="store__container store">
+                <div class="store__name">
+                  <a href="#">
+                    Swiss Production
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="card store">
+              <div class="card__img-container store">
+                <a href="#">
+                  <img src="./assets/img/logo/Untitled design.png" alt="chair image" class="card__img">
+                </a>
+              </div>
+              <div class="store__container store">
+                <div class="store__name">
+                  <a href="#">
+                    Swiss Production
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+
 
       <div class="container grid wide">
         <div class="container__title-wrapper">
