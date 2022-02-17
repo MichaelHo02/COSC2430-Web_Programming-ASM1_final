@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="./assets/css/base.css" />
 
     <!-- additional link -->
-    <link rel="stylesheet" href="./assets/css/navbar/navbar.css" />
+    <link rel="stylesheet" href="./assets/css/navbar.css" />
     <link rel="stylesheet" href="./assets/css/container/newstore.css" />
     <link rel="stylesheet" href="./assets/css/container/container.css" />
     <link rel="stylesheet" href="./assets/css/card.css" />
@@ -36,31 +36,38 @@
   <body>
     <div class="main">
       <header class="header">
-        <div class="header-wrapper grid wide">
-          <label class="menu-checkbox" for="toggle">
-            <i class="fa-solid fa-bars menu-btn-mobile"></i>
+        <div class="header__wrapper grid wide">
+  
+          <label class="nav__menu" for="toggle">
+            <i class="fa-solid fa-bars nav__menu-button"></i>
           </label>
-          <input type="checkbox" id="toggle" />
-
-          <img src="./assets/img/navbar/logo.webp" alt="" class="logo" />
+          <input type="checkbox" id="toggle">
+  
+          <img src="./assets/img/navbar/logo.webp" alt="Aranoz" class="logo" />
+  
           <!-- Home (this page), About Us, Fees, My Account, Browse, FAQs, and Contact. -->
-
+          <!-- main navigation button -->
           <nav class="navbar">
-            <ul class="navbar-list">
-              <li><a href="index.html" class="navbar-item">Home</a></li>
-              <li><a href="aboutus.html" class="navbar-item">About Us</a></li>
-              <li><a href="fees.html" class="navbar-item">Fees</a></li>
-              <li>
-                <a href="myaccount.html" class="navbar-item">My Account</a>
-              </li>
-              <li><a href="browse.html" class="navbar-item">Browse</a></li>
-              <li><a href="faqs.html" class="navbar-item">FAQs</a></li>
+  
+            <ul class="navbar__list">
+              <li><a href="index.html" class="navbar__item">Home</a></li>
+              <li><a href="aboutus.html" class="navbar__item">About Us</a></li>
+              <li><a href="fees.html" class="navbar__item">Fees</a></li>
+              <li><a href="myaccount.html" class="navbar__item">My Account</a></li>
+              <li><a href="browse.html" class="navbar__item">Browse</a></li>
+              <li><a href="faqs.html" class="navbar__item">FAQs</a></li>
             </ul>
+  
           </nav>
-          <button class="navbar-btn btn">Contact</button>
-          <a href="" class="navbar-contact-mobile">
+          <!-- contact button for desktop -->
+          <a href="contact.html">
+            <button class="navbar__btn button">Contact</button>
+          </a>
+          <!-- contact buttton for mobile -->
+          <a href="contact.html" class="navbar__button--mobile">
             <i class="fa-solid fa-phone-flip"></i>
           </a>
+  
         </div>
       </header>
 
