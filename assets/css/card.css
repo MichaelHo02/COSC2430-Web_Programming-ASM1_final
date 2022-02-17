@@ -1,3 +1,5 @@
+/* card for product and store */
+
 .card {
 	width: 240px;
 	border-radius: 5px;
@@ -53,4 +55,52 @@
 .card__img-container:hover {
 	transition: 0.5s ease-in-out;
 	opacity: 0.8;
+}
+
+/*  ------------------------------------------------------------- */
+
+/* card about us */
+.card--about-us {
+	display: grid;
+	background-color: #f8fbff;
+	gap: 32px;
+	grid-template-columns: 1fr 2fr;
+	grid-template-rows: 1fr;
+	padding: 32px;
+	margin: 32px 0;
+	border-radius: 8px;
+}
+
+.card--about-us .card__img {
+	border-radius: 50% 50% 50% 50%;
+	width: 50%;
+	margin: auto;
+}
+
+.card--about-us .card__body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.card--about-us .card__titles {
+	padding-bottom: 16px;
+}
+
+.card--about-us .card__description {
+	padding: 4px 0;
+}
+
+@media (max-width: 1023px) {
+	.card--about-us {
+		grid-template-columns: 1fr;
+		grid-template-rows: auto 1fr;
+		justify-items: center;
+	}
+
+	.card--about-us .card__body {
+		text-align: center;
+		justify-content: start;
+	}
 }
