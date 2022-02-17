@@ -1,3 +1,6 @@
+.container {
+}
+
 .container__title-wrapper {
 	display: flex;
 	justify-content: center;
@@ -5,17 +8,10 @@
 	height: 160px;
 }
 
-.heigh-auto {
-	height: auto;
-}
-
-.container {
-}
-
-.container__title-wrapper {
-}
 .container__title {
+
 }
+
 .container__wrapper {
 	display: flex;
 	scroll-snap-type: x mandatory;
@@ -31,8 +27,11 @@
 	min-width: 100%;
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-	/* justify-content: center; */
 	grid-row-gap: 40px;
 	grid-column-gap: 5px;
 	padding: 0 0 40px 0;
+}
+
+.heigh-auto {
+	height: auto;
 }
