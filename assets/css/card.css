@@ -11,7 +11,7 @@
 	box-shadow: 0 10px 20px 0 rgb(0 23 51 / 9%);
 }
 
-.card:hover .card__body.item {
+.card.card--product:hover .card__body {
 	transition: inherit;
 	padding: 0 20px;
 }
@@ -21,7 +21,7 @@
 	padding: 0 20px;
 }
 
-.card:not(:hover) .card__body.item {
+.card.card--product:not(:hover) .card__body {
 	transition: inherit;
 	padding: 0 10px;
 }
