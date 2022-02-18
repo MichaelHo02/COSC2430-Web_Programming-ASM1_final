@@ -13,21 +13,13 @@
 	box-shadow: 0 10px 20px 0 rgb(0 23 51 / 9%);
 }
 
-.card.card--product:hover .card__body {
-	transition: inherit;
-	padding: 0 20px;
-}
-
+.card.card--product:hover .card__body,
 .card:hover .store__container {
 	transition: inherit;
 	padding: 0 20px;
 }
 
-.card.card--product:not(:hover) .card__body {
-	transition: inherit;
-	padding: 0 10px;
-}
-
+.card.card--product:not(:hover) .card__body,
 .card:not(:hover) .store__container {
 	transition: inherit;
 	padding: 0 10px;
@@ -103,4 +95,29 @@
 		text-align: center;
 		justify-content: start;
 	}
+}
+
+/* ----------------------- */
+.card--fee {
+	width: 280px;
+	padding: 20px 10px;
+	border-radius: 30px;
+	background-color: #ecfdff;
+	text-align: center;
+}
+
+.card__table {
+	border-collapse: separate;
+	width: 100%;
+	border-spacing: 16px;
+}
+
+.card__table td,
+.card__table th {
+	border: none;
+}
+
+.card__table td:nth-child(odd),
+.card__table th:nth-child(odd) {
+	text-align: left;
 }

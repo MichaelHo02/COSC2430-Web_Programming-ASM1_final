@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- base css -->
+    <link rel="stylesheet" href="./assets/css/grid.css" />
+    <link rel="stylesheet" href="./assets/css/base.css" />
+
+    <!-- navbar and footer -->
+    <link rel="stylesheet" href="./assets/css/navbar.css" />
+    <link rel="stylesheet" href="./assets/css/footer.css" />
+
+    <!-- additional link -->
+    <link rel="stylesheet" href="./assets/css/container.css">
+    <link rel="stylesheet" href="./assets/css/card.css">
+    <link rel="stylesheet" href="./assets/css/button.css">
+    <link rel="stylesheet" href="./assets/css/fee.css">
+</head>
+
+<body>
+    <div class="main">
+        <!-- header -->
+        <header class="header">
+            <div class="header__wrapper grid wide">
+
+                <label class="nav__menu" for="toggle">
+                    <i class="fa-solid fa-bars nav__menu-button"></i>
+                </label>
+                <input type="checkbox" id="toggle">
+
+                <img src="./assets/img/navbar/logo.webp" alt="Aranoz" class="logo" />
+
+                <!-- Home (this page), About Us, Fees, My Account, Browse, FAQs, and Contact. -->
+                <!-- main navigation button -->
+                <nav class="navbar">
+
+                    <ul class="navbar__list">
+                        <li><a href="index.html" class="navbar__item">Home</a></li>
+                        <li><a href="aboutus.html" class="navbar__item">About Us</a></li>
+                        <li><a href="fees.html" class="navbar__item">Fees</a></li>
+                        <li><a href="myaccount.html" class="navbar__item">My Account</a></li>
+                        <li id="navbar-browse">
+                            <a href="browse.html" class="navbar__item">Browse</a>
+                            <ul class="navbar__submenu">
+                                <li><a href="#" class="navbar__submenu-item">Browse stores by name</a></li>
+                                <li><a href="#" class="navbar__submenu-item">Browse stores by category</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="faqs.html" class="navbar__item">FAQs</a></li>
+                    </ul>
+
+                </nav>
+                <!-- contact button for desktop -->
+                <a href="contact.html">
+                    <button class="navbar__btn button">Contact</button>
+                </a>
+                <!-- contact buttton for mobile -->
+                <a href="contact.html" class="navbar__button--mobile">
+                    <i class="fa-solid fa-phone-flip"></i>
+                </a>
+
+            </div>
+        </header>
+
+        <main>
+            <!-- section -->
+            <section class="container container--fee grid wide">
+                <!-- heading -->
+                <div class="container__title-wrapper">
+                    <h1 class="container__title">Ready to start with Aranoz.?</h1>
+                    <p>Choose the plan that suits you the most!</p>
+                </div>
+
+                <!-- toggle switch -->
+                <input type="checkbox" id="checkbox" checked>
+
+                <div class="container__toggle-switch">
+                    <label>Shopper</label>
+                    <label for="checkbox" class="switch">
+                        <span class="slider slider--round"></span>
+                    </label>
+                    <label>Store Owner</label>
+                </div>
+
+                <!-- container storing cards -->
+                <div class="container__page">
+                    <!-- card -->
+                    <article class="card card--fee" data-shopper>
+                        <div class="card__title">
+                            <a>
+                                <h2 class="card__title">Aranoz. Shopper</h2>
+                            </a>
+                        </div>
+                        <div class="card__body">
+                            <i class="fa-solid fa-medal medal medal--bronze"></i>
+                            <h2>Free</h2>
+                        </div>
+                        <table class="card__table">
+                            <tr>
+                                <td>Free shipping</td>
+                                <td><i class="fa-solid fa-check icon icon--yes"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Fast delivery</td>
+                                <td><i class="fa-solid fa-check icon icon--yes"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Free service fee</td>
+                                <td><i class="fa-solid fa-xmark icon icon--no"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Point accumulation</td>
+                                <td><i class="fa-solid fa-xmark icon icon--no"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Birthday gifs</td>
+                                <td><i class="fa-solid fa-xmark icon icon--no"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Onsite warranty</td>
+                                <td><i class="fa-solid fa-xmark icon icon--no"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Monthly vouncher</td>
+                                <td><i class="fa-solid fa-xmark icon icon--no"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Yearly discount</td>
+                                <td><i class="fa-solid fa-xmark icon icon--no"></i></td>
+                            </tr>
+                        </table>
+                    </article>
+
+                    <!-- card -->
+                    <article class="card card--fee" data-shopper>
+                        <div class="card__title">
+                            <a>
+                                <h2 class="card__title">Aranoz. Pro Shopper</h2>
+                            </a>
+                        </div>
+                        <div class="card__body">
+                            <i class="fa-solid fa-medal medal medal--silver"></i>
+                            <h2>$19.99 per month</h2>
+                        </div>
+                        <table class="card__table">
+                            <tr>
+                                <td>Free shipping</td>
+                                <td><i class="fa-solid fa-check icon icon--yes"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Fast delivery</td>
+                                <td><i class="fa-solid fa-check icon icon--yes"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Free service fee</td>
+                                <td><i class="fa-solid fa-check icon icon--yes"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Point accumulation</td>
+                                <td><i class="fa-solid fa-check icon icon--yes"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Birthday gifs</td>
+                                <td><i class="fa-solid fa-check icon icon--yes"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Onsite warranty</td>
+                                <td><i class="fa-solid fa-xmark icon icon--no"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Monthly vouncher</td>
+                                <td><i class="fa-solid fa-xmark icon icon--no"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Yearly discount</td>
+                                <td><i class="fa-solid fa-xmark icon icon--no"></i></td>
+                            </tr>
+                        </table>
+                    </article>
+
+                    <!-- card -->
+                    <article class="card card--fee" data-shopper>
+                        <div class="card__title">
+                            <a>
+                                <h2 class="card__title">Aranoz. VIP Shopper</h2>
+                            </a>
+                        </div>
+                        <div class="card__body">
+                            <i class="fa-solid fa-medal medal medal--gold"></i>
+                            <h2>29.99 per month</h2>
+                        </div>
+                        <table class="card__table">
+                            <tr>
+                                <td>Free shipping</td>
+                                <td><i class="fa-solid fa-check icon icon--yes"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Fast delivery</td>
+                                <td><i class="fa-solid fa-check icon icon--yes"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Free service fee</td>
+                                <td><i class="fa-solid fa-check icon icon--yes"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Onsite warranty</td>
+                                <td><i class="fa-solid fa-check icon icon--yes"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Monthly vouncher</td>
+                                <td><i class="fa-solid fa-check icon icon--yes"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Point accumulation</td>
+                                <td><i class="fa-solid fa-check icon icon--yes"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Birthday gifs</td>
+                                <td><i class="fa-solid fa-check icon icon--yes"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Yearly discount</td>
+                                <td><i class="fa-solid fa-check icon icon--yes"></i></td>
+                            </tr>
+                        </table>
+                    </article>
+
+                    <!-- card -->
+                    <article class="card card--fee" data-owner>
+                        <div class="card__title">
+                            <a>
+                                <h2 class="card__title">Aranoz. Store Owner</h2>
+                            </a>
+                        </div>
+                        <div class="card__body">
+                            <i class="fa-solid fa-medal medal medal--bronze"></i>
+                            <h2>Free</h2>
+                        </div>
+                        <table class="card__table">
+                            <tr>
+                                <td>Free 10GB Storage</td>
+                                <td><i class="fa-solid fa-check icon icon--yes"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Technical supports</td>
+                                <td><i class="fa-solid fa-check icon icon--yes"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Birthday gifs</td>
+                                <td><i class="fa-solid fa-check icon icon--yes"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Comissions fee</td>
+                                <td>10%</td>
+                            </tr>
+                            <tr>
+                                <td>Advertisement discount</td>
+                                <td>5%</td>
+                            </tr>
+                            <tr>
+                                <td>Fix fee</td>
+                                <td>30%</td>
+                            </tr>
+                            <tr>
+                                <td>Delivery service fee</td>
+                                <td>5%</td>
+                            </tr>
+                            <tr>
+                                <td>Featured products</td>
+                                <td>Low</td>
+                            </tr>
+                            <tr>
+                                <td>Featured Store</td>
+                                <td>Low</td>
+                            </tr>
+                        </table>
+                    </article>
+
+                    <!-- card -->
+                    <article class="card card--fee" data-owner>
+                        <div class="card__title">
+                            <a>
+                                <h2 class="card__title">Aranoz. Pro Owner</h2>
+                            </a>
+                        </div>
+                        <div class="card__body">
+                            <i class="fa-solid fa-medal medal medal--silver"></i>
+                            <h2>$19.99 per month</h2>
+                        </div>
+                        <table class="card__table">
+                            <tr>
+                                <td>Free 10GB Storage</td>
+                                <td><i class="fa-solid fa-check icon icon--yes"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Technical supports</td>
+                                <td><i class="fa-solid fa-check icon icon--yes"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Birthday gifs</td>
+                                <td><i class="fa-solid fa-check icon icon--yes"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Comissions fee</td>
+                                <td>5%</td>
+                            </tr>
+                            <tr>
+                                <td>Advertisement discount</td>
+                                <td>10%</td>
+                            </tr>
+                            <tr>
+                                <td>Fix fee</td>
+                                <td>20%</td>
+                            </tr>
+                            <tr>
+                                <td>Delivery service fee</td>
+                                <td>5%</td>
+                            </tr>
+                            <tr>
+                                <td>Featured products</td>
+                                <td>High</td>
+                            </tr>
+                            <tr>
+                                <td>Featured Store</td>
+                                <td>Low</td>
+                            </tr>
+                        </table>
+                    </article>
+
+                    <!-- card -->
+                    <article class="card card--fee" data-owner>
+                        <div class="card__title">
+                            <a>
+                                <h2 class="card__title">Aranoz. VIP Owner</h2>
+                            </a>
+                        </div>
+                        <div class="card__body">
+                            <i class="fa-solid fa-medal medal medal--gold"></i>
+                            <h2>$49.99 per month</h2>
+                        </div>
+                        <table class="card__table">
+                            <tr>
+                                <td>Free 10GB Storage</td>
+                                <td><i class="fa-solid fa-check icon icon--yes"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Technical supports</td>
+                                <td><i class="fa-solid fa-check icon icon--yes"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Birthday gifs</td>
+                                <td><i class="fa-solid fa-check icon icon--yes"></i></td>
+                            </tr>
+                            <tr>
+                                <td>Comissions fee</td>
+                                <td>Free</td>
+                            </tr>
+                            <tr>
+                                <td>Advertisement discount</td>
+                                <td>20%</td>
+                            </tr>
+                            <tr>
+                                <td>Fix fee</td>
+                                <td>10%</td>
+                            </tr>
+                            <tr>
+                                <td>Delivery service fee</td>
+                                <td>Free</td>
+                            </tr>
+                            <tr>
+                                <td>Featured products</td>
+                                <td>High</td>
+                            </tr>
+                            <tr>
+                                <td>Featured Store</td>
+                                <td>High</td>
+                            </tr>
+                        </table>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <footer class="grid wide">
+            <!-- logo section -->
+            <div class="footer__logo-wrapper">
+                <img src="./assets/img/navbar/logo.webp" alt="" class="" />
+            </div>
+
+            <!-- navigaiton link -->
+            <nav class="footer__row">
+                <!-- section left -->
+                <section class="footer__left">
+                    <h4 class="footer__header">Policy</h4>
+                    <ul>
+                        <li>
+                            <a href="term-of-service.html">Term of Service</a>
+                        </li>
+                        <li>
+                            <a href="privacy-policy.html">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="copyright.html">Copyright</a>
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- section right -->
+                <section class="footer__right">
+                    <h4 class="footer__header">Policy</h4>
+                    <ul>
+                        <li>
+                            <a href="term-of-service.html">Term of Service</a>
+                        </li>
+                        <li>
+                            <a href="privacy-policy.html">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="copyright.html">Copyright</a>
+                        </li>
+                    </ul>
+                </section>
+            </nav>
+
+            <!-- footer copyright -->
+            <div class="footer__copyright">
+                <p>Copyright @ 2022</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

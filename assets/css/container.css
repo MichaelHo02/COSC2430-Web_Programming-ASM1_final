@@ -1,16 +1,17 @@
 .container {
-	
 }
 
 .container__title-wrapper {
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	height: 160px;
 }
 
 .container__title {
-    text-align: center;
+	text-align: center;
+	font-size: 32px;
 }
 
 .container__wrapper {
@@ -35,4 +36,23 @@
 
 .heigh-auto {
 	height: auto;
+}
+
+
+
+.container.container--fee .container__title-wrapper {
+	gap: 16px;
+}
+
+.container__toggle-switch {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 5px;
+	margin: 16px 0;
+}
+
+.container.container.container--fee .container__page {
+	display: flex;
+	flex-wrap: wrap;
 }
