@@ -54,14 +54,26 @@
     line-height: 64px;
 }
 
+.store__navbar-list li:hover {
+    cursor: pointer;
+}
+
 .navbar-item:hover {
     opacity: 0.7;
+    cursor: pointer;
+
 }
 
 .navbar-item__product-subnav {
     position: absolute;
     list-style: none;
     display: none;
+    /* box-shadow: 0px 4px 4px #ccc; */
+
+}
+
+.navbar-item__product-subnav li {
+
 }
 
 #navbar-product:hover  .navbar-item__product-subnav {
@@ -74,10 +86,14 @@
     font-size: 1.2rem;
     text-decoration: none;
     color: black;
-
+    background-color: white;
 }
 
+/* .navbar-item__product-subnav-item:hover {
+    opacity: 0.7;
+}
 
+ */
 
 
 
