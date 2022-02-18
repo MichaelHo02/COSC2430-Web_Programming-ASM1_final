@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- base css -->
+        <link rel="stylesheet" href="./assets/css/grid.css" />
+        <link rel="stylesheet" href="./assets/css/base.css" />
+
+    <!-- navbar and footer -->
+    <link rel="stylesheet" href="./assets/css/navbar.css" />
+    <link rel="stylesheet" href="./assets/css/footer.css" /> 
+
+    <!-- additional link -->
+    <link rel="stylesheet" href="./assets/css/container.css">
+    <link rel="stylesheet" href="./assets/css/card.css">
+    <link rel="stylesheet" href="./assets/css/button.css">
+    <link rel="stylesheet" href="./assets/css/productdetail/product-detail.css">
+</head>
+
+<body>
+    <div class="main">
+        <!-- header -->
+        <header class="header">
+            <div class="header__wrapper grid wide">
+
+                <label class="nav__menu" for="toggle">
+                    <i class="fa-solid fa-bars nav__menu-button"></i>
+                </label>
+                <input type="checkbox" id="toggle">
+
+                <img src="./assets/img/navbar/logo.webp" alt="Aranoz" class="logo" />
+
+                <!-- Home (this page), About Us, Fees, My Account, Browse, FAQs, and Contact. -->
+                <!-- main navigation button -->
+                <nav class="navbar">
+
+                    <ul class="navbar__list">
+                        <li><a href="index.html" class="navbar__item">Home</a></li>
+                        <li><a href="aboutus.html" class="navbar__item">About Us</a></li>
+                        <li><a href="fees.html" class="navbar__item">Fees</a></li>
+                        <li><a href="myaccount.html" class="navbar__item">My Account</a></li>
+                        <li id="navbar-browse">
+                            <a href="browse.html" class="navbar__item">Browse</a>
+                            <ul class="navbar__submenu">
+                                <li><a href="#" class="navbar__submenu-item">Browse stores by name</a></li>
+                                <li><a href="#" class="navbar__submenu-item">Browse stores by category</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="faqs.html" class="navbar__item">FAQs</a></li>
+                    </ul>
+
+                </nav>
+                <!-- contact button for desktop -->
+                <a href="contact.html">
+                    <button class="navbar__btn button">Contact</button>
+                </a>
+                <!-- contact buttton for mobile -->
+                <a href="contact.html" class="navbar__button--mobile">
+                    <i class="fa-solid fa-phone-flip"></i>
+                </a>
+
+            </div>
+        </header>
+
+        <!-- Main starts here-->
+        <main>
+
+            <session class="product-container">
+
+                <div class="product__card">
+                    <div class="card__images">
+                        <div class="card__slider"><img id="big-image" src="https://preview.colorlib.com/theme/aranoz/img/product/xproduct_2.png.pagespeed.ic.pewIMj44xQ.webp" alt=""></div>
+                        <div id="card__img-slider" class="card__img-slider">
+                            <div class="slider__imgs"><img src="./assets/img/logo/Untitled design.png" alt=""></div>
+                            <div class="slider__imgs"><img src="./assets/img/logo/Untitled design.png"alt=""></div>
+                            <div class="slider__imgs"><img src="./assets/img/logo/Untitled design.png" alt=""></div>
+                            <div class="slider__imgs"><img src="./assets/img/logo/Untitled design.png" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="card__infos">
+                        <h1>Swiss Production</h1>
+                        
+                        <div class="card__infos-price">
+                            <h3>2100$</h3>
+                            
+                        </div>
+                        <div id="card__infos-desc">
+                            <h5>Description</h5>
+                        </div>
+                        <div id="card__infos-content">
+                            <p  class="content__paragraph" style="display: block;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum temporibus accusantium iure vitae ad architecto veniam velit doloribus itaque aliquam, voluptate facilis. Eos veniam consequatur aliquid ipsam similique omnis sit, numquam repellat itaque labore. Repellat</p>
+                        </div>
+                        <div class="card__quantity">
+                            <h3>Quantity</h3>
+                            <input type="number" name="items" id="counter" min="1" value="1">
+                        </div>
+                        <div class="card__infos-buttons">
+                            <button class="button" id="add-to-cart"><i class="fas fa-shopping-cart"></i>ADD TO CART</button>
+                            <button class="button">BUY NOW</button>
+                        </div>
+                    </div>
+                </div>
+            </session>
+
+            
+            <!-----------Product Recommendation---------->  
+            <section class="container grid wide">
+                <!-- heading -->
+                <div class="container__title-wrapper">
+                <h2 class="container__title">Related Products</h2>
+                </div>
+
+                <!-- container product cards -->
+                <div class="container__wrapper">
+                <!-- page 1 -->
+                <div class="container__page">
+
+                    <!-- card -->
+                    <article class="card card--product">
+                    <div class="card__img-container">
+                        <a href="#">
+                        <img
+                            src="https://preview.colorlib.com/theme/aranoz/img/product/xproduct_2.png.pagespeed.ic.pewIMj44xQ.webp"
+                            alt="chair image" class="card__img">
+                        </a>
+                    </div>
+                    <div class="card__body">
+                        <h4 class="card__title">
+                        <a href="#">
+                            Swiss Watch 200 series
+                        </a>
+                        </h4>
+                        <p class="card__price">$150.00</p>
+                    </div>
+                    <div class="store__container">
+                        <div class="store__name">
+                        <a href="#">
+                            Swiss Production
+                        </a>
+                        </div>
+                    </div>
+                    </article>
+
+                    <!-- card -->
+                    <article class="card card--product">
+                    <div class="card__img-container">
+                        <a href="#">
+                        <img
+                            src="https://preview.colorlib.com/theme/aranoz/img/product/xproduct_2.png.pagespeed.ic.pewIMj44xQ.webp"
+                            alt="chair image" class="card__img">
+                        </a>
+                    </div>
+                    <div class="card__body">
+                        <h4 class="card__title">
+                        <a href="#">
+                            Swiss Watch 200 series
+                        </a>
+                        </h4>
+                        <p class="card__price">$150.00</p>
+                    </div>
+                    <div class="store__container">
+                        <div class="store__name">
+                        <a href="#">
+                            Swiss Production
+                        </a>
+                        </div>
+                    </div>
+                    </article>
+
+                    <!-- card -->
+                    <article class="card card--product">
+                    <div class="card__img-container">
+                        <a href="#">
+                        <img
+                            src="https://preview.colorlib.com/theme/aranoz/img/product/xproduct_2.png.pagespeed.ic.pewIMj44xQ.webp"
+                            alt="chair image" class="card__img">
+                        </a>
+                    </div>
+                    <div class="card__body">
+                        <h4 class="card__title">
+                        <a href="#">
+                            Swiss Watch 200 series
+                        </a>
+                        </h4>
+                        <p class="card__price">$150.00</p>
+                    </div>
+                    <div class="store__container">
+                        <div class="store__name">
+                        <a href="#">
+                            Swiss Production
+                        </a>
+                        </div>
+                    </div>
+                    </article>
+
+                    <!-- card -->
+                    <article class="card card--product">
+                    <div class="card__img-container">
+                        <a href="#">
+                        <img
+                            src="https://preview.colorlib.com/theme/aranoz/img/product/xproduct_2.png.pagespeed.ic.pewIMj44xQ.webp"
+                            alt="chair image" class="card__img">
+                        </a>
+                    </div>
+                    <div class="card__body">
+                        <h4 class="card__title">
+                        <a href="#">
+                            Swiss Watch 200 series
+                        </a>
+                        </h4>
+                        <p class="card__price">$150.00</p>
+                    </div>
+                    <div class="store__container">
+                        <div class="store__name">
+                        <a href="#">
+                            Swiss Production
+                        </a>
+                        </div>
+                    </div>
+                    </article>
+                </div>
+
+                <!-- page 2 -->
+                <div class="container__page">
+
+                    <!-- card -->
+                    <article class="card card--product">
+                    <div class="card__img-container">
+                        <a href="#">
+                        <img
+                            src="https://preview.colorlib.com/theme/aranoz/img/product/xproduct_2.png.pagespeed.ic.pewIMj44xQ.webp"
+                            alt="chair image" class="card__img">
+                        </a>
+                    </div>
+                    <div class="card__body">
+                        <h4 class="card__title">
+                        <a href="#">
+                            Swiss Watch 200 series
+                        </a>
+                        </h4>
+                        <p class="card__price">$150.00</p>
+                    </div>
+                    <div class="store__container">
+                        <div class="store__name">
+                        <a href="#">
+                            Swiss Production
+                        </a>
+                        </div>
+                    </div>
+                    </article>
+
+                    <!-- card -->
+                    <article class="card card--product">
+                    <div class="card__img-container">
+                        <a href="#">
+                        <img
+                            src="https://preview.colorlib.com/theme/aranoz/img/product/xproduct_2.png.pagespeed.ic.pewIMj44xQ.webp"
+                            alt="chair image" class="card__img">
+                        </a>
+                    </div>
+                    <div class="card__body">
+                        <h4 class="card__title">
+                        <a href="#">
+                            Swiss Watch 200 series
+                        </a>
+                        </h4>
+                        <p class="card__price">$150.00</p>
+                    </div>
+                    <div class="store__container">
+                        <div class="store__name">
+                        <a href="#">
+                            Swiss Production
+                        </a>
+                        </div>
+                    </div>
+                    </article>
+
+                    <!-- card -->
+                    <article class="card card--product">
+                    <div class="card__img-container">
+                        <a href="#">
+                        <img
+                            src="https://preview.colorlib.com/theme/aranoz/img/product/xproduct_2.png.pagespeed.ic.pewIMj44xQ.webp"
+                            alt="chair image" class="card__img">
+                        </a>
+                    </div>
+                    <div class="card__body">
+                        <h4 class="card__title">
+                        <a href="#">
+                            Swiss Watch 200 series
+                        </a>
+                        </h4>
+                        <p class="card__price">$150.00</p>
+                    </div>
+                    <div class="store__container">
+                        <div class="store__name">
+                        <a href="#">
+                            Swiss Production
+                        </a>
+                        </div>
+                    </div>
+                    </article>
+
+                    <!-- card -->
+                    <article class="card card--product">
+                    <div class="card__img-container">
+                        <a href="#">
+                        <img
+                            src="https://preview.colorlib.com/theme/aranoz/img/product/xproduct_2.png.pagespeed.ic.pewIMj44xQ.webp"
+                            alt="chair image" class="card__img">
+                        </a>
+                    </div>
+                    <div class="card__body">
+                        <h4 class="card__title">
+                        <a href="#">
+                            Swiss Watch 200 series
+                        </a>
+                        </h4>
+                        <p class="card__price">$150.00</p>
+                    </div>
+                    <div class="store__container">
+                        <div class="store__name">
+                        <a href="#">
+                            Swiss Production
+                        </a>
+                        </div>
+                    </div>
+                    </article>
+                </div>
+
+                <!-- page 3 -->
+                <div class="container__page">
+
+                    <!-- card -->
+                    <article class="card card--product">
+                    <div class="card__img-container">
+                        <a href="#">
+                        <img
+                            src="https://preview.colorlib.com/theme/aranoz/img/product/xproduct_2.png.pagespeed.ic.pewIMj44xQ.webp"
+                            alt="chair image" class="card__img">
+                        </a>
+                    </div>
+                    <div class="card__body">
+                        <h4 class="card__title">
+                        <a href="#">
+                            Swiss Watch 200 series
+                        </a>
+                        </h4>
+                        <p class="card__price">$150.00</p>
+                    </div>
+                    <div class="store__container">
+                        <div class="store__name">
+                        <a href="#">
+                            Swiss Production
+                        </a>
+                        </div>
+                    </div>
+                    </article>
+
+                    <!-- card -->
+                    <article class="card card--product">
+                    <div class="card__img-container">
+                        <a href="#">
+                        <img
+                            src="https://preview.colorlib.com/theme/aranoz/img/product/xproduct_2.png.pagespeed.ic.pewIMj44xQ.webp"
+                            alt="chair image" class="card__img">
+                        </a>
+                    </div>
+                    <div class="card__body">
+                        <h4 class="card__title">
+                        <a href="#">
+                            Swiss Watch 200 series
+                        </a>
+                        </h4>
+                        <p class="card__price">$150.00</p>
+                    </div>
+                    <div class="store__container">
+                        <div class="store__name">
+                        <a href="#">
+                            Swiss Production
+                        </a>
+                        </div>
+                    </div>
+                    </article>
+
+                    <!-- card -->
+                    <article class="card card--product">
+                    <div class="card__img-container">
+                        <a href="#">
+                        <img
+                            src="https://preview.colorlib.com/theme/aranoz/img/product/xproduct_2.png.pagespeed.ic.pewIMj44xQ.webp"
+                            alt="chair image" class="card__img">
+                        </a>
+                    </div>
+                    <div class="card__body">
+                        <h4 class="card__title">
+                        <a href="#">
+                            Swiss Watch 200 series
+                        </a>
+                        </h4>
+                        <p class="card__price">$150.00</p>
+                    </div>
+                    <div class="store__container">
+                        <div class="store__name">
+                        <a href="#">
+                            Swiss Production
+                        </a>
+                        </div>
+                    </div>
+                    </article>
+
+                    <!-- card -->
+                    <article class="card card--product">
+                    <div class="card__img-container">
+                        <a href="#">
+                        <img
+                            src="https://preview.colorlib.com/theme/aranoz/img/product/xproduct_2.png.pagespeed.ic.pewIMj44xQ.webp"
+                            alt="chair image" class="card__img">
+                        </a>
+                    </div>
+                    <div class="card__body">
+                        <h4 class="card__title">
+                        <a href="#">
+                            Swiss Watch 200 series
+                        </a>
+                        </h4>
+                        <p class="card__price">$150.00</p>
+                    </div>
+                    <div class="store__container">
+                        <div class="store__name">
+                        <a href="#">
+                            Swiss Production
+                        </a>
+                        </div>
+                    </div>
+                    </article>
+                </div>
+
+                <!-- page 4 -->
+                <div class="container__page">
+
+                    <!-- card -->
+                    <article class="card card--product">
+                    <div class="card__img-container">
+                        <a href="#">
+                        <img
+                            src="https://preview.colorlib.com/theme/aranoz/img/product/xproduct_2.png.pagespeed.ic.pewIMj44xQ.webp"
+                            alt="chair image" class="card__img">
+                        </a>
+                    </div>
+                    <div class="card__body">
+                        <h4 class="card__title">
+                        <a href="#">
+                            Swiss Watch 200 series
+                        </a>
+                        </h4>
+                        <p class="card__price">$150.00</p>
+                    </div>
+                    <div class="store__container">
+                        <div class="store__name">
+                        <a href="#">
+                            Swiss Production
+                        </a>
+                        </div>
+                    </div>
+                    </article>
+
+                    <!-- card -->
+                    <article class="card card--product">
+                    <div class="card__img-container">
+                        <a href="#">
+                        <img
+                            src="https://preview.colorlib.com/theme/aranoz/img/product/xproduct_2.png.pagespeed.ic.pewIMj44xQ.webp"
+                            alt="chair image" class="card__img">
+                        </a>
+                    </div>
+                    <div class="card__body">
+                        <h4 class="card__title">
+                        <a href="#">
+                            Swiss Watch 200 series
+                        </a>
+                        </h4>
+                        <p class="card__price">$150.00</p>
+                    </div>
+                    <div class="store__container">
+                        <div class="store__name">
+                        <a href="#">
+                            Swiss Production
+                        </a>
+                        </div>
+                    </div>
+                    </article>
+
+                    <!-- card -->
+                    <article class="card card--product">
+                    <div class="card__img-container">
+                        <a href="#">
+                        <img
+                            src="https://preview.colorlib.com/theme/aranoz/img/product/xproduct_2.png.pagespeed.ic.pewIMj44xQ.webp"
+                            alt="chair image" class="card__img">
+                        </a>
+                    </div>
+                    <div class="card__body">
+                        <h4 class="card__title">
+                        <a href="#">
+                            Swiss Watch 200 series
+                        </a>
+                        </h4>
+                        <p class="card__price">$150.00</p>
+                    </div>
+                    <div class="store__container">
+                        <div class="store__name">
+                        <a href="#">
+                            Swiss Production
+                        </a>
+                        </div>
+                    </div>
+                    </article>
+
+                    <!-- card -->
+                    <article class="card card--product">
+                    <div class="card__img-container">
+                        <a href="#">
+                        <img
+                            src="https://preview.colorlib.com/theme/aranoz/img/product/xproduct_2.png.pagespeed.ic.pewIMj44xQ.webp"
+                            alt="chair image" class="card__img">
+                        </a>
+                    </div>
+                    <div class="card__body">
+                        <h4 class="card__title">
+                        <a href="#">
+                            Swiss Watch 200 series
+                        </a>
+                        </h4>
+                        <p class="card__price">$150.00</p>
+                    </div>
+                    <div class="store__container">
+                        <div class="store__name">
+                        <a href="#">
+                            Swiss Production
+                        </a>
+                        </div>
+                    </div>
+                    </article>
+                </div>
+                </div>
+            </section>
+    </main>
+
+        </main>
+
+        <footer class="grid wide">
+            <!-- logo section -->
+            <div class="footer__logo-wrapper">
+                <img src="./assets/img/navbar/logo.webp" alt="" class="" />
+            </div>
+
+            <!-- navigaiton link -->
+            <nav class="footer__row">
+                <!-- section left -->
+                <section class="footer__left">
+                    <h4 class="footer__header">Policy</h4>
+                    <ul>
+                        <li>
+                            <a href="term-of-service.html">Term of Service</a>
+                        </li>
+                        <li>
+                            <a href="privacy-policy.html">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="copyright.html">Copyright</a>
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- section right -->
+                <section class="footer__right">
+                    <h4 class="footer__header">Policy</h4>
+                    <ul>
+                        <li>
+                            <a href="term-of-service.html">Term of Service</a>
+                        </li>
+                        <li>
+                            <a href="privacy-policy.html">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="copyright.html">Copyright</a>
+                        </li>
+                    </ul>
+                </section>
+            </nav>
+            
+
+            <!-- footer copyright -->
+            <div class="footer__copyright">
+                <p>Copyright @ 2022</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
