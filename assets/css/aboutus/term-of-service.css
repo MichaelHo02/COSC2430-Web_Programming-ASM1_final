@@ -2,37 +2,26 @@ body {
   background: #f8fbff;
   font-size: 16px;
   line-height: 24px;
+  text-align: justify;
 }
-a {
-  color: #5d88b3;
-}
-a .icon {
-  line-height: 1.428571429;
-}
-a:hover .icon {
-  text-decoration: none;
-}
-button {
-  outline: none;
-}
+
 h1,
 h2,
-h3,
-h4,
-h5,
-h6 {
+h3 {
   margin: 0 0 10px 0;
   font-weight: 400;
 }
+
 p {
   margin: 0 0 20px 0;
 }
+
 strong {
   font-weight: 700;
 }
 
 @media screen and (max-width: 1023px) {
-  .page {
+  .Term_of_service {
     margin-left: 20px;
     margin-right: 20px;
     text-align: justify;
