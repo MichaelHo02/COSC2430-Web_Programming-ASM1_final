@@ -1,156 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500&display=swap"
-            rel="stylesheet"
-        />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-            integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        />
 
-        <!-- base css -->
-        <link rel="stylesheet" href="./assets/css/grid.css" />
-        <link rel="stylesheet" href="./assets/css/base.css" />
-        <link rel="stylesheet" href="./assets/css/faqs/faqs.css" />
-        <!-- additional link -->
-        <link rel="stylesheet" href="./assets/css/navbar/navbar.css" />
-        <link rel="stylesheet" href="./assets/css/container/newstore.css" />
-        <link rel="stylesheet" href="./assets/css/container/container.css" />
-        <link rel="stylesheet" href="./assets/css/card.css" />
-        <link rel="stylesheet" href="./assets/css/footer.css" />
-        <link rel="stylesheet" href="./assets/css/myaccount/myaccount-login.css" />
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-        <script src="./assets/js/navbar.js" defer></script>
-        
-    </head>
+    <!-- base css -->
+    <link rel="stylesheet" href="./assets/css/grid.css" />
+    <link rel="stylesheet" href="./assets/css/base.css" />
 
-    <header class="header">
-        <div class="header-wrapper grid wide">
-            <img src="./assets/img/navbar/logo.webp" alt="" class="logo" />
-            <!-- Home (this page), About Us, Fees, My Account, Browse, FAQs, and Contact. -->
+    <!-- navbar and footer -->
+    <link rel="stylesheet" href="./assets/css/navbar.css" />
+    <link rel="stylesheet" href="./assets/css/footer.css" />
+    <link rel="stylesheet" href="./assets/css/button.css">
 
-            <nav class="navbar">
-                <ul class="navbar-list">
-                    <li><a href="index.html" class="navbar-item">Home</a></li>
-                    <li><a href="aboutus.html" class="navbar-item">About Us</a></li>
-                    <li><a href="fees.html" class="navbar-item">Fees</a></li>
-                    <li>
-                        <a href="myaccount.html" class="navbar-item">My Account</a>
-                    </li>
-                    <li><a href="browse.html" class="navbar-item">Browse</a></li>
-                    <li><a href="faqs.html" class="navbar-item">FAQs</a></li>
-                </ul>
-            </nav>
-            <button class="navbar-btn btn">Contact</button>
-        </div>
-    </header>
+    <!-- additional link -->
+    <link rel="stylesheet" href="./assets/css/faqs/faqs.css" />
 
-    <!-- FAQs container -->
-    <div class="faqs-container">
-        <div class="faqs">
-            <section class="faq">
-                <h2 class="faq_question">What can I sell on this platform?</h2>
+
+</head>
+
+<body>
+    <div class="main">
+        <!-- header -->
+        <header class="header">
+            <div class="header__wrapper grid wide">
+
+                <label class="nav__menu" for="toggle">
+                    <i class="fa-solid fa-bars nav__menu-button"></i>
+                </label>
+                <input type="checkbox" id="toggle">
+
+                <img src="./assets/img/navbar/logo.webp" alt="Aranoz" class="logo" />
+
+                <!-- Home (this page), About Us, Fees, My Account, Browse, FAQs, and Contact. -->
+                <!-- main navigation button -->
+                <nav class="navbar">
+
+                    <ul class="navbar__list">
+                        <li><a href="index.html" class="navbar__item">Home</a></li>
+                        <li><a href="aboutus.html" class="navbar__item">About Us</a></li>
+                        <li><a href="fees.html" class="navbar__item">Fees</a></li>
+                        <li><a href="myaccount-login.html" class="navbar__item">My Account</a></li>
+                        <li id="navbar-browse">
+                            <a href="browse.html" class="navbar__item">Browse</a>
+                            <ul class="navbar__submenu">
+                                <li><a href="#" class="navbar__submenu-item">Browse stores by name</a></li>
+                                <li><a href="#" class="navbar__submenu-item">Browse stores by category</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="faqs.html" class="navbar__item">FAQs</a></li>
+                    </ul>
+
+                </nav>
+                <!-- contact button for desktop -->
+                <a href="contact.html">
+                    <button class="navbar__btn button">Contact</button>
+                </a>
+                <!-- contact buttton for mobile -->
+                <a href="contact.html" class="navbar__button--mobile">
+                    <i class="fa-solid fa-phone-flip"></i>
+                </a>
+
+            </div>
+        </header>
+
+        <!-- FAQs container -->
+        <div class="faqs__container grid wide">
+            <article class="faq">
                 <details>
-                    <summary>View answer</summary>
-                    <p class="faq_answer">You can almost sell anything. But, in order to maintain a fair and legal environment, we has a list
-                        of prohibited items, selling which will be a violation of the rules and regulations. So, here are
-                        few of the items that we prohibits its sellers to sell on its market Animal and wildlife products
-                        (including, without limitation, wild animals): Artifacts and antiquities Used cosmetics Counterfeit
-                        currency and stamps Credit and debit cards Currency including, without limitation, digital currency
-                        Drugs, medicines (prescribed or non-prescribed), drug-like substances and associated paraphilia</p>
-                  </details>
-            </section>
+                    <summary class="faq__summary">
+                        <h2 class="faq__title">
+                            What can I sell on this platform?
+                        </h2>
+                    </summary>
+                    <p class="faq__answer">
+                        You can almost sell anything. But, in order to maintain a fair and legal
+                        environment, we has a list of prohibited items, selling which will be a violation of the
+                        rules and regulations. So, here are few of the items that we prohibits its sellers to sell
+                        on its market Animal and wildlife
+                        products (including, without limitation, wild animals): Artifacts and antiquities Used
+                        cosmetics
+                        Counterfeit currency and stamps Credit and debit cards Currency including, without
+                        limitation, digital
+                        currency Drugs, medicines (prescribed or non-prescribed), drug-like substances and
+                        associated
+                        paraphilia
+                    </p>
+                </details>
+            </article>
 
-            <section class="faq">
-                <h2 class="faq_question">What are the top-selling products on this platform?</h2>
+            <article class="faq">
                 <details>
-                    <summary>View answer</summary>
-                    <p class="faq_answer">The Southeast Asian region has always been keeping fashion on the top priority. The top selling
+                    <summary class="faq__summary">
+                        <h2 class="faq__title">What are the top-selling products on this platform?</h2>
+                    </summary>
+                    <p class="faq__answer">The Southeast Asian region has always been keeping fashion on the top
+                        priority.
+                        The top selling
                         products are of course fashion accessories, whether it be men’s or women’s.</p>
-                  </details>
-            </section>
+                </details>
+            </article>
 
-            <section class="faq">
-                <h2 class="faq_question">What is Free Shipping Voucher</h2>
+            <article class="faq">
                 <details>
-                    <summary>View answer</summary>
-                    <p class="faq_answer">The buyers can opt for a free shipping voucher for the delivery of the product. To avail that, one
-                        must opt for the ‘Free Shipping Voucher’ during the checkout. The free shipping vouchers on Shopee
-                        avail two types of offers on the purchase of a product to the buyer.</p>
+                    <summary class="faq__summary">
+                        <h2 class="faq__title">What is Free Shipping Voucher</h2>
+                    </summary>
+                    <p class="faq__answer">
+                        The buyers can opt for a free shipping voucher for the delivery of the product. To avail that,
+                        one must opt for the ‘Free Shipping Voucher’ during the checkout. The free shipping vouchers on
+                        Shopee avail two types of offers on the purchase of a product to the buyer.
+                    </p>
                 </details>
-            </section>
-            <section class="faq">
-                <h2 class="faq_question">What is guaranteed by us?</h2>
+            </article>
+
+            <article class="faq">
                 <details>
-                    <summary>View answer</summary>
-                <p>We make mobile selling safe and secure by protecting its buyers and sellers from fraudulent
-                practices.</p>
+                    <summary class="faq__summary">
+                        <h2 class="faq__title">What is guaranteed by us?</h2>
+                    </summary>
+                    <p class="faq__answer">
+                        We make mobile selling safe and secure by protecting its buyers and sellers from fraudulent
+                        practices.
+                    </p>
                 </details>
-            </section>
-            <section class="faq">
-                <h2 class="faq_question to-bottom">How to receive payments?</h2>
+            </article>
+
+            <article class="faq">
                 <details>
-                    <summary>View answer</summary>
-                <p class="faq_answer">
-                    All the payments made by buyers for your products will first go to ‘Mall Guarantee’ and later will
-                    be added to your accounts when the transaction is successful and the buyers receive the product
-                    successfully. Make sure that you have your bank account set on the application in which your
-                    payments will be credited
-                </p>
+                    <summary class="faq__summary">
+                        <h2 class="faq__title">How to receive payments?</h2>
+                    </summary>
+                    <p class="faq__answer">
+                        All the payments made by buyers for your products will first go to ‘Mall Guarantee’ and
+                        later will be added to your accounts when the transaction is successful and the buyers receive
+                        the product successfully. Make sure that you have your bank account set on the application in
+                        which your payments will be credited
+                    </p>
                 </details>
-            </section>
+            </article>
         </div>
-    </div>
 
-    <footer class="grid wide">
-        <div class="footer__container">
-            <div class="footer__center">
+        <footer class="grid wide">
+            <!-- logo section -->
+            <div class="footer__logo-wrapper">
                 <img src="./assets/img/navbar/logo.webp" alt="" class="" />
             </div>
-            <div class="footer__row">
-                <div class="footer__left">
+
+            <!-- navigaiton link -->
+            <nav class="footer__row">
+                <!-- section left -->
+                <section class="footer__left">
                     <h4 class="footer__header">Policy</h4>
                     <ul>
                         <li>
                             <a href="term-of-service.html">Term of Service</a>
                         </li>
                         <li>
-                            <a href="privacy.html">Privacy Policy</a>
+                            <a href="privacy-policy.html">Privacy Policy</a>
                         </li>
                         <li>
                             <a href="copyright.html">Copyright</a>
                         </li>
                     </ul>
-                </div>
-                <div class="footer__right">
+                </section>
+
+                <!-- section right -->
+                <section class="footer__right">
                     <h4 class="footer__header">Policy</h4>
                     <ul>
                         <li>
                             <a href="term-of-service.html">Term of Service</a>
                         </li>
                         <li>
-                            <a href="privacy.html">Privacy Policy</a>
+                            <a href="privacy-policy.html">Privacy Policy</a>
                         </li>
                         <li>
                             <a href="copyright.html">Copyright</a>
                         </li>
                     </ul>
-                </div>
+                </section>
+            </nav>
+
+            <!-- footer copyright -->
+            <div class="footer__copyright">
+                <p>Copyright @ 2022</p>
             </div>
-            <div class="padding-20">
-                <p class="text-center font-size-3">Copyright @ 2022</p>
-            </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
+</body>
+
 </html>
