@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping cart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- base css -->
+    <link rel="stylesheet" href="./assets/css/grid.css" />
+    <link rel="stylesheet" href="./assets/css/base.css" />
+
+    <!-- navbar and footer -->
+    <link rel="stylesheet" href="./assets/css/navbar.css" />
+    <link rel="stylesheet" href="./assets/css/footer.css" />
+
+    <!-- additional link -->
+    <link rel="stylesheet" href="./assets/css/button.css" />
+    <link rel="stylesheet" href="./assets/css/card.css" />
+    <link rel="stylesheet" href="./assets/css/cart.css" />
+  </head>
+
+  <body>
+    <div class="main">
+      <!-- header -->
+      <header class="header">
+        <div class="header__wrapper grid wide">
+          <label class="nav__menu" for="toggle">
+            <i class="fa-solid fa-bars nav__menu-button"></i>
+          </label>
+          <input type="checkbox" id="toggle" />
+
+          <img src="./assets/img/navbar/logo.webp" alt="Aranoz" class="logo" />
+
+          <!-- Home (this page), About Us, Fees, My Account, Browse, FAQs, and Contact. -->
+          <!-- main navigation button -->
+          <nav class="navbar">
+            <ul class="navbar__list">
+              <li><a href="index.html" class="navbar__item">Home</a></li>
+              <li><a href="aboutus.html" class="navbar__item">About Us</a></li>
+              <li><a href="fees.html" class="navbar__item">Fees</a></li>
+              <li>
+                <a href="myaccount.html" class="navbar__item">My Account</a>
+              </li>
+              <li id="navbar-browse">
+                <a href="browse.html" class="navbar__item">Browse</a>
+                <ul class="navbar__submenu">
+                  <li>
+                    <a href="#" class="navbar__submenu-item"
+                      >Browse stores by name</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="navbar__submenu-item"
+                      >Browse stores by category</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li><a href="faqs.html" class="navbar__item">FAQs</a></li>
+            </ul>
+          </nav>
+          <!-- contact button for desktop -->
+          <a href="contact.html">
+            <button class="navbar__btn button">Contact</button>
+          </a>
+          <!-- contact buttton for mobile -->
+          <a href="contact.html" class="navbar__button--mobile">
+            <i class="fa-solid fa-phone-flip"></i>
+          </a>
+        </div>
+      </header>
+
+      <main>
+        <div class="wrapper grid wide">
+          <!-- cart items details -->
+
+          <div class="product-cart">
+            <h4 class="page-banner-sm">Shopping Cart</h4>
+            <div class="wrapper">
+              <div class="cart-collection">
+                <div class="cart-item">
+                  <form action="">
+                    <div class="cart-product">
+                      <div class="cart-image">
+                        <img src="assets\img\newstore\store_2.webp" alt="" />
+                      </div>
+                      <div class="cart-product-info">
+                        <p class="cart-product-name">Orange Chair</p>
+                        <p class="cart-price-sm">$30</p>
+                        <small>x 1</small>
+                      </div>
+                    </div>
+                    <div class="cart-quantity-md">
+                      <div class="cart-quantity-controls">
+                        <button>-</button>
+                        <input type="number" value="1" readonly />
+                        <button>+</button>
+                      </div>
+                    </div>
+                    <div class="cart-unit-price">
+                      <h4>$30</h4>
+                    </div>
+                    <div class="cart-product-total">
+                      <h4>$30</h4>
+                    </div>
+                    <div class="cart-controls-sm">
+                      <div class="remove">
+                        <a href="">Remove</a>
+                      </div>
+                      <div class="cart-quantity-controls-sm">
+                        <button>-</button>
+                        <input type="number" value="1" readonly />
+                        <button>+</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="cart-item">
+                  <form action="">
+                    <div class="cart-product">
+                      <div class="cart-image">
+                        <img src="assets\img\newstore\store_2.webp" alt="" />
+                      </div>
+                      <div class="cart-product-info">
+                        <p class="cart-product-name">Orange Chair</p>
+                        <p class="cart-price-sm">$30</p>
+                        <small>x 1</small>
+                      </div>
+                    </div>
+                    <div class="cart-quantity-md">
+                      <div class="cart-quantity-controls">
+                        <button>-</button>
+                        <input type="number" value="1" readonly />
+                        <button>+</button>
+                      </div>
+                    </div>
+                    <div class="cart-unit-price">
+                      <h4>$30</h4>
+                    </div>
+                    <div class="cart-product-total">
+                      <h4>$30</h4>
+                    </div>
+                    <div class="cart-controls-sm">
+                      <div class="remove">
+                        <a href="">Remove</a>
+                      </div>
+                      <div class="cart-quantity-controls-sm">
+                        <button>-</button>
+                        <input type="number" value="1" readonly />
+                        <button>+</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="cart-item">
+                  <form action="">
+                    <div class="cart-product">
+                      <div class="cart-image">
+                        <img src="assets\img\newstore\store_2.webp" alt="" />
+                      </div>
+                      <div class="cart-product-info">
+                        <p class="cart-product-name">Orange Chair</p>
+                        <p class="cart-price-sm">$30</p>
+                        <small>x 1</small>
+                      </div>
+                    </div>
+                    <div class="cart-quantity-md">
+                      <div class="cart-quantity-controls">
+                        <button>-</button>
+                        <input type="number" value="1" readonly />
+                        <button>+</button>
+                      </div>
+                    </div>
+                    <div class="cart-unit-price">
+                      <h4>$30</h4>
+                    </div>
+                    <div class="cart-product-total">
+                      <h4>$30</h4>
+                    </div>
+                    <div class="cart-controls-sm">
+                      <div class="remove">
+                        <a href="">Remove</a>
+                      </div>
+                      <div class="cart-quantity-controls-sm">
+                        <button>-</button>
+                        <input type="number" value="1" readonly />
+                        <button>+</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="cart-item">
+                  <form action="">
+                    <div class="cart-product">
+                      <div class="cart-image">
+                        <img src="assets\img\newstore\store_2.webp" alt="" />
+                      </div>
+                      <div class="cart-product-info">
+                        <p class="cart-product-name">Orange Chair</p>
+                        <p class="cart-price-sm">$30</p>
+                        <small>x 1</small>
+                      </div>
+                    </div>
+                    <div class="cart-quantity-md">
+                      <div class="cart-quantity-controls">
+                        <button>-</button>
+                        <input type="number" value="1" readonly />
+                        <button>+</button>
+                      </div>
+                    </div>
+                    <div class="cart-unit-price">
+                      <h4>$30</h4>
+                    </div>
+                    <div class="cart-product-total">
+                      <h4>$30</h4>
+                    </div>
+                    <div class="cart-controls-sm">
+                      <div class="remove">
+                        <a href="">Remove</a>
+                      </div>
+                      <div class="cart-quantity-controls-sm">
+                        <button>-</button>
+                        <input type="number" value="1" readonly />
+                        <button>+</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="cart-total-holder">
+                <div class="cart-total">
+                  <p>Total:</p>
+                  <p>$120</p>
+                </div>
+                <div class="cart-action-button">
+                  <a href="">Continue shopping</a>
+                  <a href="">Proceed to checkout</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <!-- footer -->
+    <footer class="grid wide">
+        <!-- logo section -->
+        <div class="footer__logo-wrapper">
+          <img src="./assets/img/navbar/logo.webp" alt="" class="" />
+        </div>
+  
+        <!-- navigaiton link -->
+        <nav class="footer__row">
+          <!-- section left -->
+          <section class="footer__left">
+            <h4 class="footer__header">Policy</h4>
+            <ul>
+              <li>
+                <a href="term-of-service.html">Term of Service</a>
+              </li>
+              <li>
+                <a href="privacy-policy.html">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="copyright.html">Copyright</a>
+              </li>
+            </ul>
+          </section>
+  
+          <!-- section right -->
+          <section class="footer__right">
+            <h4 class="footer__header">Policy</h4>
+            <ul>
+              <li>
+                <a href="term-of-service.html">Term of Service</a>
+              </li>
+              <li>
+                <a href="privacy-policy.html">Privacy Policy</a>
+              </li>
+              <li>
+                <a href="copyright.html">Copyright</a>
+              </li>
+            </ul>
+          </section>
+        </nav>
+  
+        <!-- footer copyright -->
+        <div class="footer__copyright">
+          <p>Copyright @ 2022</p>
+        </div>
+      </footer>
+  </body>
+</html>
