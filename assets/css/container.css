@@ -28,17 +28,21 @@
 	scroll-snap-align: start;
 	min-width: 100%;
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+	justify-content: space-between;
+	grid-template-columns: repeat(auto-fit, 240px);
 	grid-row-gap: 40px;
-	grid-column-gap: 5px;
 	padding: 0 0 40px 0;
+}
+
+@media screen and (max-width: 768px) {
+	.container__page {
+		justify-content: space-around;
+	}
 }
 
 .heigh-auto {
 	height: auto;
 }
-
-
 
 .container.container--fee .container__title-wrapper {
 	gap: 16px;
