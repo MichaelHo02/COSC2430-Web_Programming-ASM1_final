@@ -95,6 +95,33 @@
 
  */
 
+ .store__about-us-wrapper {
+    width: 100%;
+    background-color: #fafafa;
+    border-radius: 8px;
+ }
+
+ .store__about-us-title {
+     width: 100%;
+     text-align: center;
+     font-size: 1.8rem;
+     padding-top: 32px;
+ }
+
+ .store__about-us-title::after {
+     content: '';
+     display: block;
+     border: 0.5px solid black;
+     width: 16%;
+     margin: 0 auto;
+     margin-top: 32px;
+ }
+
+ .store__about-us-content {
+    padding: 64px;
+    text-align: center;
+ }
+
 
 
 
