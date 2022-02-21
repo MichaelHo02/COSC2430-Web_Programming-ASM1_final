@@ -1,30 +1,28 @@
-body {
-  background: #f8fbff;
+.article {
   font-size: 16px;
-  line-height: 24px;
+}
+
+.article__title {
+  margin: 20px 0;
+}
+.article__section {
+  margin: 40px 0;
+}
+.article__heading {
+  margin: 10px 0;
+  text-align: left;
+  font-size: 24px;
+}
+
+.article__paragraph {
+  padding: 10px 0;
   text-align: justify;
 }
 
-h1,
-h2,
-h3 {
-  margin: 0 0 10px 0;
-  font-weight: 400;
+.article__list {
+  padding-left: 20px;
 }
 
-p {
-  margin: 0 0 20px 0;
-}
-
-strong {
-  font-weight: 700;
-}
-
-@media screen and (max-width: 1023px) {
-  .Term_of_service {
-    margin-left: 20px;
-    margin-right: 20px;
-    text-align: justify;
-    font-size: 14px;
-  }
+.article__list li {
+  text-align: left;
 }
