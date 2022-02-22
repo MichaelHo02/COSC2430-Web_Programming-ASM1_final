@@ -1,43 +1,48 @@
 .article {
-  font-size: 16px;
+	font-size: 16px;
+	word-wrap: break-word;
 }
 
 .article__title {
-  margin: 20px 0;
-  font-size: 32px;
+	margin: 20px 0;
+	font-size: 32px;
 }
 
 .article__section {
-  margin: 40px 0;
+	margin: 40px 0;
+}
+
+.article__section .article__section {
+  margin: 20px 0;
 }
 
 .article__heading {
-  margin: 10px 0;
-  text-align: left;
-  font-size: 24px;
+	margin: 10px 0;
+	text-align: left;
+	font-size: 24px;
 }
 
 h2.article__heading {
-  font-size: 22px;
+	font-size: 22px;
 }
 
 h3.article__heading {
-  font-size: 20px;
+	font-size: 20px;
 }
 
 h4.article__heading {
-  font-size: 18px;
+	font-size: 18px;
 }
 
 .article__paragraph {
-  padding: 10px 0;
-  text-align: justify;
+	padding: 10px 0;
+	text-align: justify;
 }
 
 .article__list {
-  padding-left: 20px;
+	padding-left: 20px;
 }
 
 .article__list li {
-  text-align: left;
+	text-align: left;
 }
