@@ -8,6 +8,10 @@
 	font-size: 32px;
 }
 
+.article__title--center {
+	text-align: center;
+}
+
 .article__section {
 	margin: 40px 0;
 }
