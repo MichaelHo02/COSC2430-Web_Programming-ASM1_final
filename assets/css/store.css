@@ -45,6 +45,7 @@
     border-radius: 8px;
 }
 
+
 .navbar-item {
     text-decoration: none;
     color: black;
@@ -89,12 +90,6 @@
     background-color: white;
 }
 
-/* .navbar-item__product-subnav-item:hover {
-    opacity: 0.7;
-}
-
- */
-
  .store__about-us-wrapper {
     width: 100%;
     background-color: #fafafa;
@@ -121,6 +116,54 @@
     padding: 64px;
     text-align: center;
  }
+
+
+@media (max-width: 1024px) {
+    .store__navbar-list {
+        flex-direction: column;
+
+
+    }
+
+    .store__navbar-list li {
+        width: 100%;
+        /* border-bottom: 1px solid #ccc; */
+        border-radius: 8px;
+
+
+    }
+
+    .navbar-item {
+        display: block;
+        width: 100%;
+        text-align: center;
+        border-radius: 8px;
+    }
+
+    #navbar-product {
+        position: relative;
+    }
+
+    .navbar-item__product-subnav {
+        position: relative;
+
+    }
+
+    .navbar-item__product-subnav-item {
+        display: block;
+        width: 100%;
+        text-align: center;
+        background-color: #fafafa;
+
+    }
+
+    .navbar-item__product-subnav-item:hover {
+        opacity: 0.7;
+    }
+
+
+    
+}
 
 
 
