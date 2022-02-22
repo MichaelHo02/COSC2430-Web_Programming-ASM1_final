@@ -121,3 +121,18 @@
 .card__table th:nth-child(odd) {
 	text-align: left;
 }
+
+.card__bottom {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 10px;
+}
+
+.card.card--no-padding-effect:not(hover) .card__body,
+.card.card--no-padding-effect:not(hover) .card__bottom,
+.card.card--no-padding-effect:hover .card__body,
+.card.card--no-padding-effect:hover .card__bottom {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
