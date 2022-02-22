@@ -8,16 +8,12 @@
 	font-size: 32px;
 }
 
-.article__title--center {
-	text-align: center;
-}
-
 .article__section {
 	margin: 40px 0;
 }
 
 .article__section .article__section {
-  margin: 20px 0;
+	margin: 20px 0;
 }
 
 .article__heading {
@@ -49,4 +45,9 @@ h4.article__heading {
 
 .article__list li {
 	text-align: left;
+}
+
+.article__title--center,
+.article__paragraph--center {
+	text-align: center;
 }
