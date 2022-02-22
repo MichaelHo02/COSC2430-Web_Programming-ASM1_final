@@ -15,12 +15,12 @@
 }
 
 .chip {
-	width: 50px;
+	/* width: 50px; */
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
 	border-radius: 30px;
-	padding: 0;
+	padding: 0 10px;
 	flex-shrink: 0;
 }
 
