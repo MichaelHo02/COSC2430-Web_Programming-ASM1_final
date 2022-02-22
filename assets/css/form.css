@@ -1,5 +1,5 @@
 .section {
-	padding: 20px;
+	padding: 20px 0;
 }
 
 label.form__section {
@@ -129,7 +129,8 @@ input[type="email"]:not(:placeholder-shown):invalid {
 }
 
 .grid-template-2-columns {
-	grid-template-columns: repeat(2, 1fr);
+	grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+	gap: 20px;
 }
 
 .display-grid div {
@@ -142,8 +143,6 @@ input[type="email"]:not(:placeholder-shown):invalid {
 }
 
 .button {
-	/* display: block; */
-	/* width: 160px; */
 	margin: 0 auto;
 }
 
@@ -151,4 +150,8 @@ input[type="email"]:not(:placeholder-shown):invalid {
 	.grid.wide {
 		width: 90%;
 	}
+}
+
+.padding-space {
+	padding: 40px 0;
 }
