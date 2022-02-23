@@ -1,6 +1,21 @@
-.footer_logo-wrapper p {
-  font: 26px Arial, Helvetica, sans-serif;
-  text-align: center;
-  color: #333333;
-  padding: 5px 10px 10px;
+@media (min-width: 769px) {
+  .footer__logo-wrapper img {
+    width: 85px;
+    height: auto;
+  }
+
+  .footer__logo-wrapper p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer__logo-wrapper img {
+    width: auto;
+    height: auto;
+  }
+
+  .footer__logo-wrapper p {
+    font-size: 10px;
+  }
 }
