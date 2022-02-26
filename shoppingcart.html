@@ -85,108 +85,96 @@
       </header>
 
       <main>
-        <div class="wrapper grid wide">
+        <div class="grid wide">
           <!-- cart items details -->
-
           <h1 >CART</h1>
-          <div class="content-body">
 
             <!-- cart items table -->
-            <div class="cart-body active">
-              <div class="cart-product-list">
-              <ul class="cart-product-table">
+            <div class="cart active">
+              <div class="cart_list">
+              <ul class="cart_table">
               
                 <!-- product details -->
-                <li class="cart-product" >
-                    <div class="cart-img">
-                      <img alt="image of a product" src="assets\img\newstore\store_2.webp">
-                    </div>
-                    <div class="cart-product-details">
-                      <p class="cart-product-title">Orange Chair</p>
-                      <p class="cart-product-price">$30.00</p>
-                    <div class="cart-product-quantity">
+                <li class="cart_product" >
+                      <img src="assets\img\newstore\store_2.webp">
+                    <div class="cart_details">
+                      <p class="cart_title">Orange Chair</p>
+                      <p class="cart_price">$30.00</p>
+                    <div class="cart_quantity">
                       <!-- quantity button -->
-                        <button class="cart-product-quantity-button minus" ><i class="fas fa-minus" aria-hidden="true"></i></button>
-                        <label><input class="cart-product-quantity-input" type="number" value="1" min="0" disabled=""></label>
-                        <button class="cart-product-quantity-button plus" ><i class="fas fa-plus" aria-hidden="true"></i></button>
+                        <button><i class="fas fa-minus" aria-hidden="true"></i></button>
+                        <label><input type="number" value="1" min="0" disabled=""></label>
+                        <button><i class="fas fa-plus" aria-hidden="true"></i></button>
                      </div>
                     </div>
     
                     <!-- remove button -->
-                    <div class="cart-product-remove">
-                      <button class="cart-product-remove-button">REMOVE</button>
+                    <div class="cart_remove">
+                        <button >REMOVE</button>
                     </div>
                   </li>
-                  <li class="cart-product" >
-                    <div class="cart-img">
-                      <img alt="image of a product" src="assets\img\newstore\store_2.webp">
-                    </div>
-                    <div class="cart-product-details">
-                      <p class="cart-product-title">Orange Chair</p>
-                      <p class="cart-product-price">$30.00</p>
-                    <div class="cart-product-quantity">
-                        <button class="cart-product-quantity-button minus" ><i class="fas fa-minus" aria-hidden="true"></i></button>
-                        <label><input class="cart-product-quantity-input" type="number" value="1" min="0" disabled=""></label>
-                        <button class="cart-product-quantity-button plus" ><i class="fas fa-plus" aria-hidden="true"></i></button>
-                     </div>
-                    </div>
-    
-                    <div class="cart-product-remove">
-                      <button class="cart-product-remove-button">REMOVE</button>
-                    </div>
-                  </li>
-                  <li class="cart-product" >
-                    <div class="cart-img">
-                      <img alt="image of a product" src="assets\img\newstore\store_2.webp">
-                    </div>
-                    <div class="cart-product-details">
-                      <p class="cart-product-title">Orange Chair</p>
-                      <p class="cart-product-price">$30.00</p>
-                    <div class="cart-product-quantity">
-                        <button class="cart-product-quantity-button minus" ><i class="fas fa-minus" aria-hidden="true"></i></button>
-                        <label><input class="cart-product-quantity-input" type="number" value="1" min="0" disabled=""></label>
-                        <button class="cart-product-quantity-button plus" ><i class="fas fa-plus" aria-hidden="true"></i></button>
-                     </div>
-                    </div>
-    
-                    <div class="cart-product-remove">
-                      <button class="cart-product-remove-button">REMOVE</button>
-                    </div>
-                  </li></ul>
+
+                  <li class="cart_product" >
+                    <img src="assets\img\newstore\store_2.webp">
+                  <div class="cart_details">
+                    <p class="cart_title">Orange Chair</p>
+                    <p class="cart_price">$30.00</p>
+                  <div class="cart_quantity">
+                      <button><i class="fas fa-minus" aria-hidden="true"></i></button>
+                      <label><input type="number" value="1" min="0" disabled=""></label>
+                      <button><i class="fas fa-plus" aria-hidden="true"></i></button>
+                   </div>
+                  </div>
+                  <div class="cart_remove">
+                      <button >REMOVE</button>
+                  </div>
+                </li>
+                
+                <li class="cart_product" >
+                  <img src="assets\img\newstore\store_2.webp">
+                <div class="cart_details">
+                  <p class="cart_title">Orange Chair</p>
+                  <p class="cart_price">$30.00</p>
+                <div class="cart_quantity">
+                    <button><i class="fas fa-minus" aria-hidden="true"></i></button>
+                    <label><input type="number" value="1" min="0" disabled=""></label>
+                    <button><i class="fas fa-plus" aria-hidden="true"></i></button>
+                 </div>
+                </div>
+                <div class="cart_remove">
+                    <button >REMOVE</button>
+                </div>
+              </li></ul>
               </div>
     
 
-              <div class="cart-product-summary">
-              <ul class="cart-product-summary-table">
+              <div class="summary">
+              <ul class="summary_table">
                     <!-- product total -->
-                    <li class="cart-product-total">
-                      <span class="cart-product-total-tag">Price</span>
-                      <span class="cart-product-total-fee">$90.00</span>
+                    <li class="cart_total">
+                      <span class="total_tag">Price</span>
+                      <span class="total_fee">$90.00</span>
 
                     <!-- coupon -->
-                    <li class="cart-product-coupon">
-                      <span class="cart-product-total-tag">
-                        <label for="insert-coupon">Coupon</label>
-                        <input class="insert-coupon" id="insert-coupon" type="text">
-                        <button class="apply-coupon-button">APPLY</button>
-                        <button class="remove-coupon-button"><i class="fas fa-times" aria-hidden="true"></i></button>
+                    <li class="coupon">
+                      <span class="total_tag">
+                        <label for="coupon--insert">Coupon</label>
+                        <input class="coupon--insert" id="coupon--insert" type="text">
+                        <button class="button--apply">APPLY</button>
                        </span>
-                      <span class="cart-product-total-fee"></span> <br><br><br>
-                      <p class="coupon-msg"></p>
                     </li>
-                    <li class="cart-product-fees-total">
-                      <span class="cart-product-total-tag">Total</span>
-                      <span class="cart-product-total-fee">$90.00</span>
+                    <li>
+                      <span class="total_tag">Total</span>
+                      <span class="total_fee">$90.00</span>
                     </li>
 
                     <!-- continue shopping/checkout buttons -->
-                    <li class="cart-product-summary-button">
-                      <span><a href="index.html"><button class="cart-product-summary-button-continue">CONTINUE SHOPPING</button></a></span>
-                      <span><a href="thank-you.html"><button class="cart-product-summary-button-order">CHECKOUT</button></a></span>
+                    <li class="summary_button">
+                      <a  href="index.html"><button class="button" >CONTINUE SHOPPING</button></a>
+                      <a  href="thank-you.html"><button class="button--secondary">CHECKOUT</button></a>
                     </li>
               </ul>
               </div>
-         </div>
          </div>
       </main>
 
